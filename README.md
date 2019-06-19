@@ -1,2 +1,60 @@
-# mhaidarhanif.com
-😎 Personal website of M Haidar Hanif
+<h1 align="center">mhaidarhanif.com</h1>
+<p>
+  <img src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/mhaidarh/mhaidarhanif.com">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
+  </a>
+  <a href="https://twitter.com/mhaidarh">
+    <img alt="Twitter: mhaidarh" src="https://img.shields.io/twitter/follow/mhaidarh.svg?style=social" target="_blank" />
+  </a>
+</p>
+
+> Personal Website of M Haidar Hanif
+
+### 🏠 [Homepage](https://mhaidarhanif.com)
+
+## Install
+
+```sh
+yarn
+```
+
+## Usage
+
+```sh
+yarn start
+```
+
+## Run tests
+
+```sh
+yarn test
+```
+
+## Author
+
+👤 **M Haidar Hanif**
+
+- LinkedIn: [@mhaidarhanif](https://linkedin.com/in/mhaidarhanif)
+- Facebook: [@mhaidarhanif](https://facebook.com/mhaidarhanif)
+- Instagram: [@mhaidarh](https://instagram.com/mhaidarh)
+- Twitter: [@mhaidarh](https://twitter.com/mhaidarh)
+- GitHub: [@mhaidarh](https://github.com/mhaidarh)
+- GitLab: [@mhaidarh](https://gitlab.com/mhaidarh)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome! Feel free to check [issues page](https://github.com/mhaidarh/mhaidarhanif.com/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2019 [M Haidar Hanif](https://mhaidarhanif.com).
+
+This project is [MIT License](https://opensource.org/licenses/MIT) licensed.
