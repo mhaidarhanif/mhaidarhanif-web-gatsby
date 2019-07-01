@@ -22,17 +22,49 @@
 yarn
 ```
 
+## Development
+
+```sh
+yarn dev
+```
+
 ## Usage
 
 ```sh
 yarn start
 ```
 
-## Run tests
+## Run Tests
 
 ```sh
 yarn test
 ```
+
+## Tech Stack
+
+### Frontend
+
+- HTML
+- CSS
+- JavaScript
+- React
+  - Emotion
+  - Gatsby.js
+  - Redux
+  - Apollo
+- Netlify
+
+### Backend
+
+- Node.js
+- Express.js
+- GraphQL
+  - GraphQL Yoga
+- MongoDB
+  - Mongoose
+- Heroku
+  - Heroku mLab
+- Google Compute Engine
 
 ## Author
 
@@ -44,6 +76,7 @@ yarn test
 - Twitter: [@mhaidarh](https://twitter.com/mhaidarh)
 - GitHub: [@mhaidarh](https://github.com/mhaidarh)
 - GitLab: [@mhaidarh](https://gitlab.com/mhaidarh)
+- 500px: [@mhaidarh](https://500px.com/mhaidarh)
 
 ## 🤝 Contributing
 
