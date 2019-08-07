@@ -1,6 +1,6 @@
-# Professional Profile of M Haidar Hanif
+# M Haidar Hanif
 
-# Names
+## Names
 
 - Haidar Hanif Ryuuhiro
 - Maya Asmara Ryuuhi
@@ -9,7 +9,7 @@
   - Hyou Ryuuhiro
   - Mai Ryuuhi
 
-# Media
+## Media
 
 - Name Card
   - Small
@@ -24,7 +24,7 @@
 - Android App
   - https://play.google.com
 
-# mhaidarhanif.com
+## mhaidarhanif.com
 
 - Home `/`
 - About `/about`
@@ -61,14 +61,14 @@
   - Superhuman `/works/superhuman`
   - Impact Byte `/works/impactbyte`
 
-# Design
+## Design
 
 - Namecard: https://figma.com
 - Website: https://figma.com
 - YouTube: https://figma.com
 - Android: https://figma.com
 
-# Colors
+## Colors
 
 - Dark Black
 - Shadow Gray
