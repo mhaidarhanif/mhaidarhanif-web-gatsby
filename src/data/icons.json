@@ -1,0 +1,47 @@
+[
+  {
+    "name": "LinkedIn",
+    "url": "https: //linkedin.com/in/mhaidarhanif",
+    "image": "linkedin.svg"
+  },
+  {
+    "name": "Facebook",
+    "url": "https://facebook.com/mhaidarhanif",
+    "image": "facebook.svg"
+  },
+  {
+    "name": "Instagram",
+    "url": "https://instagram.com/mhaidarh",
+    "image": "instagram.svg"
+  },
+  {
+    "name": "GitHub",
+    "url": "https://github.com/mhaidarh",
+    "image": "github.svg"
+  },
+  {
+    "name": "GitLab",
+    "url": "https://gitlab.com/mhaidarh",
+    "image": "gitlab.svg"
+  },
+  {
+    "name": "Medium",
+    "url": "https://medium.com/@mhaidarh",
+    "image": "medium.svg"
+  },
+  {
+    "name": "DevTo",
+    "url": "https://dev.to/mhaidarh",
+    "image": "devto.svg"
+  },
+  {
+    "name": "Hashnode",
+    "url": "https://hashnode.com/mhaidarh",
+    "image": "hashnode.svg"
+  },
+  {
+    "name": "YouTube",
+    "url": "https://youtube.com/c/MHaidarHanif",
+    "image": "youtube.svg"
+  }
+]
