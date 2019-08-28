@@ -7,7 +7,7 @@ const SocialIcons = () => {
     <div>
       {icons.map((icon, index) => {
         return (
-          <a href={icon.url}>
+          <a key={index} href={icon.url}>
             <img src={`/icons/${icon.image}`} alt={icon.name} />
           </a>
         )
