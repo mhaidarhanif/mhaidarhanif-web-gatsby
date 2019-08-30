@@ -29,6 +29,10 @@ button {
   cursor: pointer;
 }
 
+input {
+  font-family: 'Fira Sans', sans-serif;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
