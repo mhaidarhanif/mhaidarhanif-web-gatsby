@@ -2,6 +2,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 
 import Nav from '../core/Nav'
+
 import ButtonLanguage from './ButtonLanguage'
 import ButtonSearch from './ButtonSearch'
 import ButtonTheme from './ButtonTheme'
@@ -22,6 +23,7 @@ const LogoImage = styled.img`
 `
 
 const LogoHeading = styled.h1`
+  font-family: 'Overlock', sans-serif;
   font-size: 2em;
 `
 
@@ -67,7 +69,7 @@ const Navigation = () => {
           <Link>Projects</Link>
         </ListItem>
         <ListItem>
-          <Link>Learnings</Link>
+          <Link>Postings</Link>
         </ListItem>
         <ListItem>
           <Link>Contact</Link>

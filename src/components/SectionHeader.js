@@ -7,8 +7,6 @@ import Button from '../core/Button'
 
 import Navigation from './Navigation'
 
-import colors from '../styles/colors.json'
-
 const Header = styled.header`
   display: flex;
   flex-direction: row;
@@ -22,7 +20,9 @@ const HeaderContent = styled.div`
 `
 
 const HeaderHeading = styled.h1`
+  font-family: 'Overlock', sans-serif;
   font-size: 3em;
+  margin-bottom: 20px;
 `
 
 const SectionHeader = () => {

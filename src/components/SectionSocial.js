@@ -1,27 +1,31 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import styled from '@emotion/styled'
 
 import Section from '../core/Section'
-import Heading from '../core/Heading'
 
-import SocialIcons from './SocialIcons'
+import ContentHeading from './ContentHeading'
+import SocialLinks from './SocialLinks'
+import DocumentLinks from './DocumentLinks'
 
 const SectionSocial = props => {
+  const SocialContent = styled.div`
+    background: #e9e7ea;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  `
+
   return (
     <Section>
-      <Heading size={1}>The Social Media</Heading>
-      {!props.simple && (
-        <Heading size={2}>
-          Multiple way of socializing in the 21st century
-        </Heading>
-      )}
-      <SocialIcons />
-      {!props.simple && (
-        <Fragment>
-          <a href="https://google.com">RESUME</a>
-          <span> · </span>
-          <a href="https://google.com">SERP</a>
-        </Fragment>
-      )}
+      <SocialContent>
+        <ContentHeading
+          title="The Social Media"
+          subtitle="Multiple way of socializing in the 21st century"
+        />
+        <SocialLinks />
+        <DocumentLinks />
+      </SocialContent>
     </Section>
   )
 }

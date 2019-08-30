@@ -7,7 +7,7 @@ const StyledButtonLanguage = styled.button`
   color: ${colors.white.c};
   background: none;
   border-radius: 5px;
-  border: 3px solid ${colors.white.c};
+  border: 2px solid ${colors.white.c};
   font-size: 1.4em;
   font-weight: bold;
   padding: 5px 10px;

@@ -3,7 +3,8 @@ import styled from '@emotion/styled'
 
 import Section from '../core/Section'
 import Heading from '../core/Heading'
-import Button from '../core/Button'
+import Form from '../core/Form'
+import Input from '../core/Input'
 
 import colors from '../styles/colors.json'
 
@@ -18,26 +19,18 @@ const SectionSubscribe = props => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
-    top: -1;
   `
 
-  const Form = styled.form``
-
-  const Input = styled.input`
+  const SubscribeButton = styled.button`
+    color: ${colors.green.a};
+    background-color: ${colors.lime.c};
     border-radius: 5px;
     border: none;
     font-size: 20px;
-    padding: 20px 40px 20px 15px;
-    margin-right: 20px;
-
-    &::placeholder {
-      color: ${colors.white.a};
-    }
-  `
-
-  const SubscribeButton = styled(Button)`
-    padding: 20px 40px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    padding: 11px 30px;
+    text-transform: uppercase;
   `
 
   const SubscribeNote = styled.p`
@@ -48,7 +41,7 @@ const SectionSubscribe = props => {
   return (
     <Section>
       <SubscribeContent>
-        <Heading size={1} color="white">
+        <Heading size={2} color="white">
           Get the updates by email
         </Heading>
 
