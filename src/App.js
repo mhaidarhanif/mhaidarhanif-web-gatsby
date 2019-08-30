@@ -11,7 +11,7 @@ import SectionLearn from './components/SectionLearn'
 import SectionTech from './components/SectionTech'
 import SectionContact from './components/SectionContact'
 
-function App() {
+const App = () => {
   return (
     <div>
       <ElevatedChatButton />
@@ -19,7 +19,6 @@ function App() {
       <SectionHeader />
 
       <SectionIntro />
-      <SectionQuoteHaidar />
 
       <SectionSocial />
 
