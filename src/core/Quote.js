@@ -10,6 +10,7 @@ const Quote = props => {
 
   const QuoteText = styled.p`
     font-size: 3.2em;
+    font-weight: bold;
   `
 
   const QuoteAuthor = styled.p`

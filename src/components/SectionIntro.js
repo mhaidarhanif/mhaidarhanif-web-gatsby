@@ -25,9 +25,11 @@ const IntroHeading = styled.h2`
 `
 
 const IntroImage = styled.div`
+  z-index: -10;
   max-width: 800px;
   margin-left: 100px;
   margin-top: 100px;
+  transform: translateY(10px);
 `
 
 const Image = styled.img`

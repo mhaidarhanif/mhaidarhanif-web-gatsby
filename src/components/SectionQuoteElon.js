@@ -9,7 +9,8 @@ import colors from '../styles/colors.json'
 const SectionQuoteElon = props => {
   const QuoteContent = styled.div`
     background: ${colors.black.a};
-    background-image: url('/images/quote.jpg');
+    background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+  url('/images/quote.jpg') no-repeat center;
     background-repeat: no-repeat;
     background-size: cover;
     color: ${colors.white.c};
