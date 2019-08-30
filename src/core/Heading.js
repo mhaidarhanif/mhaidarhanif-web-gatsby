@@ -2,18 +2,22 @@ import React from 'react'
 import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 
+import colors from '../styles/colors.json'
+
 const Heading = ({ size, color, children }) => {
   const common = css`
-    color: ${color};
+    color: ${color || colors.black.a};
   `
 
   const StyledHeading1 = styled.h1`
     ${common}
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 0.5em;
   `
   const StyledHeading2 = styled.h2`
     ${common}
+    font-size: 2em;
+    margin-bottom: 0.5em;
   `
   const StyledHeading3 = styled.h3`
     ${common}

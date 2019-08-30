@@ -6,8 +6,8 @@ const StyledElevated = styled.div`
   position: fixed;
   bottom: 0;
   right: 0;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 `
 
 const Elevated = ({ children }) => {
