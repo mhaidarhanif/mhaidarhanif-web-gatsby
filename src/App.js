@@ -4,10 +4,10 @@ import ElevatedChatButton from './components/ElevatedChatButton'
 import SectionHeader from './components/SectionHeader'
 import SectionFooter from './components/SectionFooter'
 import SectionIntro from './components/SectionIntro'
-import SectionQuoteHaidar from './components/SectionQuoteHaidar'
+import SectionSubscribe from './components/SectionSubscribe'
 import SectionQuoteElon from './components/SectionQuoteElon'
 import SectionSocial from './components/SectionSocial'
-import SectionLearn from './components/SectionLearn'
+import SectionPost from './components/SectionPost'
 import SectionTech from './components/SectionTech'
 import SectionContact from './components/SectionContact'
 
@@ -20,9 +20,11 @@ const App = () => {
 
       <SectionIntro />
 
+      <SectionSubscribe />
+
       <SectionSocial />
 
-      <SectionLearn />
+      <SectionPost />
 
       <SectionTech />
 
@@ -30,7 +32,6 @@ const App = () => {
 
       <SectionContact />
 
-      <SectionSocial simple={true} />
       <SectionFooter />
     </div>
   )
