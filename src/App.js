@@ -1,8 +1,8 @@
 import React from 'react'
 
 import ElevatedChatButton from './components/ElevatedChatButton'
-import HeaderHero from './components/HeaderHero'
-import FooterGeneric from './components/FooterGeneric'
+import SectionHeader from './components/SectionHeader'
+import SectionFooter from './components/SectionFooter'
 import SectionIntro from './components/SectionIntro'
 import SectionQuoteHaidar from './components/SectionQuoteHaidar'
 import SectionQuoteElon from './components/SectionQuoteElon'
@@ -16,7 +16,7 @@ function App() {
     <div>
       <ElevatedChatButton />
 
-      <HeaderHero />
+      <SectionHeader />
 
       <SectionIntro />
       <SectionQuoteHaidar />
@@ -32,7 +32,7 @@ function App() {
       <SectionContact />
 
       <SectionSocial simple={true} />
-      <FooterGeneric />
+      <SectionFooter />
     </div>
   )
 }

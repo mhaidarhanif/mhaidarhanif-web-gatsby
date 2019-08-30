@@ -2,7 +2,7 @@ import React from 'react'
 
 import Footer from '../core/Footer'
 
-const FooterGeneric = () => {
+const SectionFooter = () => {
   return (
     <Footer>
       <img src="/images/footer.jpg" alt="Footer" />
@@ -19,4 +19,4 @@ const FooterGeneric = () => {
   )
 }
 
-export default FooterGeneric
+export default SectionFooter
