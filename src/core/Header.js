@@ -1,7 +1,10 @@
 import React from 'react'
+import styled from '@emotion/styled'
 
-const Header = props => {
-  return <header>{props.children}</header>
+const StyledHeader = styled.header``
+
+const Header = ({ children }) => {
+  return <StyledHeader>{children}</StyledHeader>
 }
 
 export default Header

@@ -1,12 +1,7 @@
 import React from 'react'
 
-const Section = props => {
-  return (
-    <section>
-      {props.children}
-      <hr />
-    </section>
-  )
+const Section = ({ children }) => {
+  return <section>{children}</section>
 }
 
 export default Section
