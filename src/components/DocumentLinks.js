@@ -26,17 +26,19 @@ const Span = styled.span`
 const DocumentLinks = () => {
   return (
     <StyledDocumentLinks>
-      <Anchor href="">
-        <DocumentLink>CV</DocumentLink>
-      </Anchor>
+      <DocumentLink>
+        <Anchor href="https://stackoverflow.com/cv/mhaidarh">CV</Anchor>
+      </DocumentLink>
       <Span> · </Span>
-      <Anchor href="">
-        <DocumentLink>Resume</DocumentLink>
-      </Anchor>
+      <DocumentLink>
+        <Anchor href="https://stackoverflow.com/story/mhaidarh">Story</Anchor>
+      </DocumentLink>
       <Span> · </Span>
-      <Anchor href="https://www.google.com/search?q=M+Haidar+Hanif">
-        <DocumentLink>SERP</DocumentLink>
-      </Anchor>
+      <DocumentLink>
+        <Anchor href="https://www.google.com/search?q=M+Haidar+Hanif">
+          SERP
+        </Anchor>
+      </DocumentLink>
     </StyledDocumentLinks>
   )
 }

@@ -3,13 +3,13 @@ import styled from '@emotion/styled'
 
 import colors from '../styles/colors.json'
 
-const Thumbnail = ({ image, title, tags }) => {
+const Thumbnail = ({ post }) => {
   const ThumbnailLink = styled.a``
 
   const StyledThumbnail = styled.div`
     box-shadow: 4px 4px 4px hsla(0, 0%, 0%, 0.25);
     align-items: flex-end;
-    background-image: url(${image});
+    background-image: url(${post.image});
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
@@ -53,17 +53,13 @@ const Thumbnail = ({ image, title, tags }) => {
   `
 
   return (
-    <ThumbnailLink href="https://google.com">
+    <ThumbnailLink href={post.url} target="_blank">
       <StyledThumbnail>
         <ThumbnailContent>
-          <ThumbnailTitle>{title}</ThumbnailTitle>
+          <ThumbnailTitle>{post.title}</ThumbnailTitle>
           <ThumbnailTags>
-            {tags.map((tag, index) => {
-              return (
-                <ThumbnailTag key={index} href="">
-                  {tag}
-                </ThumbnailTag>
-              )
+            {post.tags.map((tag, index) => {
+              return <ThumbnailTag key={index}>{tag}</ThumbnailTag>
             })}
           </ThumbnailTags>
         </ThumbnailContent>

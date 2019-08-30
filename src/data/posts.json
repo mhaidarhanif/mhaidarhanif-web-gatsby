@@ -2,16 +2,19 @@
   {
     "title": "Why Learning JavaScript as Your First Programming Language",
     "tags": ["tech", "javascript"],
-    "image": "/images/why-learning-javascript.jpg"
+    "image": "/images/why-learning-javascript.jpg",
+    "url": "https://freecodecamp.org/news/what-programming-language-should-i-learn-first-19a33b0a467d"
   },
   {
     "title": "The Unstoppable Force - The Real Difference Between Success and Failure",
     "tags": ["life", "business"],
-    "image": "/images/the-unstoppable-force.jpg"
+    "image": "/images/the-unstoppable-force.jpg",
+    "url": "https://youtu.be/C5dyGh3oMVQ"
   },
   {
     "title": "The Best Learning Websites for All Developers in 2019",
     "tags": ["tech", "website"],
-    "image": "/images/best-learning-website-developers.jpg"
+    "image": "/images/best-learning-website-developers.jpg",
+    "url": "https://developerdrive.com/best-places-learn-how-to-code"
   }
 ]

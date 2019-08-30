@@ -22,7 +22,7 @@ const SectionPost = props => {
     min-height: 1200px;
   `
 
-  const ContentList = styled.div`
+  const ContentDivider = styled.div`
     display: flex;
     justify-content: center;
     width: 1400px;
@@ -33,11 +33,11 @@ const SectionPost = props => {
       <PostContent>
         <ContentHeading
           title="The Learning Resources"
-          subtitle="Useful and important information that I’ve shared and recommended"
+          subtitle="Useful and important information that I recommend"
         />
-        <ContentList>
+        <ContentDivider>
           <Thumbnails />
-        </ContentList>
+        </ContentDivider>
       </PostContent>
     </Section>
   )

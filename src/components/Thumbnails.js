@@ -20,14 +20,7 @@ const Thumbnails = () => {
   return (
     <StyledThumbnails>
       {posts.map((post, index) => {
-        return (
-          <Thumbnail
-            key={index}
-            image={post.image}
-            title={post.title}
-            tags={post.tags}
-          />
-        )
+        return <Thumbnail key={index} post={post} />
       })}
       <More>
         <Button shadow color="cyan">
