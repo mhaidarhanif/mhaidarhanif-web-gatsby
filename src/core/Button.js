@@ -30,7 +30,6 @@ const StyledButton = styled.button`
   }};
   border-radius: 5px;
   border: none;
-  font-family: 'Fira Sans', sans-serif;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1.2px;

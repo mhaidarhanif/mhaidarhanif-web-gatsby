@@ -3,9 +3,13 @@ import styled from '@emotion/styled'
 
 import colors from '../styles/colors.json'
 
-const AnchorLink = styled.a`
+const StyledAnchorLink = styled.a`
   color: ${colors.blue.b};
   font-weight: bold;
 `
+
+const AnchorLink = props => {
+  return <StyledAnchorLink>{props.children}</StyledAnchorLink>
+}
 
 export default AnchorLink

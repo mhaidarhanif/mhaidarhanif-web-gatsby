@@ -1,14 +1,33 @@
 import React from 'react'
+import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 
-const StyledHeading1 = styled.h1``
-const StyledHeading2 = styled.h2``
-const StyledHeading3 = styled.h3``
-const StyledHeading4 = styled.h4``
-const StyledHeading5 = styled.h5``
-const StyledHeading6 = styled.h6``
+const Heading = ({ size, color, children }) => {
+  const common = css`
+    color: ${color};
+  `
 
-const Heading = ({ size, children }) => {
+  const StyledHeading1 = styled.h1`
+    ${common}
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  `
+  const StyledHeading2 = styled.h2`
+    ${common}
+  `
+  const StyledHeading3 = styled.h3`
+    ${common}
+  `
+  const StyledHeading4 = styled.h4`
+    ${common}
+  `
+  const StyledHeading5 = styled.h5`
+    ${common}
+  `
+  const StyledHeading6 = styled.h6`
+    ${common}
+  `
+
   switch (size) {
     case 1:
       return <StyledHeading1>{children}</StyledHeading1>
