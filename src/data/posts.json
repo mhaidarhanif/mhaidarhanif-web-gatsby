@@ -2,16 +2,16 @@
   {
     "title": "Why Learning JavaScript as Your First Programming Language",
     "tags": ["tech", "javascript"],
-    "photo": "why-learning-javascript.jpg"
+    "image": "/images/why-learning-javascript.jpg"
   },
   {
     "title": "The Unstoppable Force - The Real Difference Between Success and Failure",
     "tags": ["life", "business"],
-    "photo": "the-unstoppable-force.jpg"
+    "image": "/images/the-unstoppable-force.jpg"
   },
   {
     "title": "The Best Learning Websites for All Developers in 2019",
     "tags": ["tech", "website"],
-    "photo": "best-learning-website-developers.jpg"
+    "image": "/images/best-learning-website-developers.jpg"
   }
 ]
