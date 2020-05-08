@@ -34,7 +34,7 @@ Visit it live on [mhaidarhanif.com](https://mhaidarhanif.com)
 Install dependencies.
 
 ```sh
-pnpm install
+yarn
 ```
 
 ### Development
@@ -42,7 +42,7 @@ pnpm install
 Serve with hot reload at `localhost:8080`.
 
 ```sh
-pnpm run dev
+yarn dev
 ```
 
 ### Build
@@ -50,7 +50,7 @@ pnpm run dev
 Build for production with minification.
 
 ```sh
-pnpm run build
+yarn build
 ```
 
 ### Serve
@@ -58,7 +58,7 @@ pnpm run build
 Serve the production build locally.
 
 ```sh
-pnpm run serve
+yarn serve
 ```
 
 ### Test
@@ -66,7 +66,7 @@ pnpm run serve
 Run tests with jest and `preact-render-spy`.
 
 ```sh
-pnpm run test
+yarn test
 ```
 
 ## 👤 Author
