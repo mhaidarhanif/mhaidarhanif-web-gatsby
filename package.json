@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
+    "dev": "preact watch --port 3000",
     "build": "preact build",
     "serve": "sirv build --cors --single",
-    "dev": "preact watch",
     "lint": "eslint src",
     "test": "jest"
   },

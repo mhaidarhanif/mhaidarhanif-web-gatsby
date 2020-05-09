@@ -27,7 +27,7 @@ Visit it live on [mhaidarhanif.com](https://mhaidarhanif.com)
 - xstyled
 - Netlify
 
-## Usage
+## 🛠️ Usage
 
 ### Install
 
@@ -39,7 +39,7 @@ yarn
 
 ### Development
 
-Serve with hot reload at `localhost:8080`.
+Serve with hot reload at `http://localhost:3000`.
 
 ```sh
 yarn dev
