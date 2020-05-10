@@ -69,7 +69,7 @@ const NavigationLinks = styled.ul`
 
 const MenuIcon = styled.img`
   height: 10px;
-  padding: 0 10px;
+  padding: 10px;
 `
 
 const Header = () => (

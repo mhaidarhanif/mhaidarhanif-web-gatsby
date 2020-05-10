@@ -3,9 +3,9 @@ import styled from '@xstyled/emotion'
 
 const FooterContainer = styled.footer`
   display: flex;
-  padding: 30px;
+  padding: 50px;
   justify-content: center;
-  color: #333333;
+  color: #222222;
 `
 
 const Footer = () => {
