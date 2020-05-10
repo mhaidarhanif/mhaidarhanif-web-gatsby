@@ -1,23 +1,11 @@
-html,
 body {
-  height: 100%;
-  width: 100%;
   padding: 0;
   margin: 0;
-  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Rubik', 'Helvetica Neue', arial, sans-serif;
   background: #101010;
   color: #ffffff;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-#app {
-  height: 100%;
 }
 
 h1,
@@ -29,12 +17,6 @@ h6 {
   font-family: 'Playfair Display', serif;
   font-weight: normal;
   color: #cccccc;
-}
-
-p {
-  margin: 15px 0;
-  font-size: 18px;
-  line-height: 30px;
 }
 
 a {
