@@ -21,9 +21,10 @@ const LayoutContainer = styled.main`
 `
 
 const Layout = ({ children }) => {
+  const baseUrl = `https://mhaidarhanif.com/`
   const title = `M Haidar Hanif`
   const description = `Educator, Engineer, Entrepreneur. Mentoring aspiring professional web and software developers, worldwide.`
-  const imagePath = `/assets/og-image.jpg`
+  const imageUrl = baseUrl + `assets/og-image.jpg`
 
   return (
     <LayoutContainer>
@@ -32,14 +33,15 @@ const Layout = ({ children }) => {
         title={title}
         defaultTitle={title}
         titleAttributes={{ itemprop: 'name', lang: 'en' }}
+        base={{ target: '_blank', href: baseUrl }}
         meta={[
           { name: 'description', content: description },
           { property: 'og:title', content: title },
           { property: 'og:description', content: description },
-          { property: 'og:image', content: imagePath },
+          { property: 'og:image', content: imageUrl },
         ]}
         link={[
-          { rel: 'canonical', href: 'http://mhaidarhanif.com/' },
+          { rel: 'canonical', href: baseUrl },
           {
             rel: 'apple-touch-icon',
             href: '/assets/icons/apple-touch-icon-57x57.png',
