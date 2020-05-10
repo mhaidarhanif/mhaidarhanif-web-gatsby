@@ -25,6 +25,7 @@ const Layout = ({ children }) => {
   const title = `M Haidar Hanif`
   const description = `Educator, Engineer, Entrepreneur. Mentoring aspiring professional web and software developers, worldwide.`
   const imageUrl = baseUrl + `assets/og-image.jpg`
+  const url = baseUrl
 
   return (
     <LayoutContainer>
@@ -39,9 +40,10 @@ const Layout = ({ children }) => {
           { property: 'og:title', content: title },
           { property: 'og:description', content: description },
           { property: 'og:image', content: imageUrl },
+          { property: 'og:url', content: url },
         ]}
         link={[
-          { rel: 'canonical', href: baseUrl },
+          { rel: 'canonical', href: url },
           {
             rel: 'apple-touch-icon',
             href: '/assets/icons/apple-touch-icon-57x57.png',
