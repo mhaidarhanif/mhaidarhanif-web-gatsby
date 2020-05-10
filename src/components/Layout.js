@@ -19,14 +19,6 @@ const LayoutContainer = styled.main`
   })}
 `
 
-const Layout = ({ children }) => (
-  <LayoutContainer>
-    <Header />
-
-    {children}
-
-    <Footer />
-  </LayoutContainer>
-)
+const Layout = ({ children }) => <LayoutContainer>{children}</LayoutContainer>
 
 export default Layout
