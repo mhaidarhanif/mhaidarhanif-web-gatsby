@@ -1,68 +1,99 @@
 import { h } from 'preact'
-import styled from '@xstyled/emotion'
+import { breakpoints } from '@xstyled/system'
+import styled, { css } from '@xstyled/emotion'
 
+import Paragraph from './Paragraph'
 import LinkButtons from './LinkButtons'
 import LinkButton from './LinkButton'
 
-const SectionHeroContainer = styled.section`
+const Container = styled.section`
   display: flex;
-  margin: 60px 0;
+  margin: 100px auto;
+  ${breakpoints({
+    xs: css`
+      flex-direction: column;
+    `,
+    md: css`
+      flex-direction: row;
+    `,
+  })}
 `
 
-const SectionHeroText = styled.div`
+const Column = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 500px;
+  ${breakpoints({
+    xs: css`
+      margin-bottom: 60px;
+    `,
+    md: css`
+      margin-bottom: 0;
+    `,
+  })}
 `
 
-const SectionHeroPhoto = styled.div``
+const TitleSpecial = styled.h1`
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  margin: 0;
+  margin-bottom: 15px;
+  ${breakpoints({
+    xs: css`
+      font-size: 3em;
+    `,
+    md: css`
+      font-size: 3.6em;
+    `,
+  })}
+`
 
-const HeroTitleAccent = styled.div`
+const Accent = styled.div`
   background-color: #f2c94c;
   height: 5px;
   width: 100px;
   border-radius: 10px;
 `
 
-const HeroTitle = styled.h1`
-  display: flex;
-  flex-direction: column;
-  font-weight: normal;
-  font-size: 72px;
-  letter-spacing: 0.05em;
-  margin: 0;
+const Texts = styled.div`
+  padding-right: 30px;
 `
 
-const HeroTexts = styled.div``
-
-const HeroParagraph = styled.p``
-
-const HeroPhoto = styled.img`
+const Photo = styled.img`
   border: 5px solid #222222;
   box-sizing: border-box;
   border-radius: 10px;
-  height: 600px;
+
+  ${breakpoints({
+    xs: css`
+      width: 100%;
+    `,
+    sm: css`
+      width: 400px;
+    `,
+  })}
 `
 
 const SectionHero = () => (
-  <SectionHeroContainer>
-    <SectionHeroText>
-      <HeroTitle>
-        <HeroTitleAccent></HeroTitleAccent>
+  <Container>
+    <Column>
+      <TitleSpecial>
+        <Accent></Accent>
         <span>Educator</span>
         <span>Engineer</span>
         <span>Explorer</span>
-      </HeroTitle>
+      </TitleSpecial>
 
-      <HeroTexts>
-        <HeroParagraph>
+      <Texts>
+        <Paragraph>
           Haidar is a seasoned tech educator and engineer who mentor people in
           software engineering, web development, and industrial career. Beyond
           that, he’s exploring various experiments to solve world problems.
           Especially helping people’s career in the software industry. Normally
           he doesn’t talk in a 3rd person view.
-        </HeroParagraph>
+        </Paragraph>
 
         <LinkButtons>
           <LinkButton href='/projects' variant='primary'>
@@ -72,13 +103,13 @@ const SectionHero = () => (
             Contact Haidar
           </LinkButton>
         </LinkButtons>
-      </HeroTexts>
-    </SectionHeroText>
+      </Texts>
+    </Column>
 
-    <SectionHeroPhoto>
-      <HeroPhoto src='/assets/mhaidarhanif-photo.jpg' alt='Photo of Haidar' />
-    </SectionHeroPhoto>
-  </SectionHeroContainer>
+    <Column>
+      <Photo src='/assets/mhaidarhanif-photo.jpg' alt='Photo of Haidar' />
+    </Column>
+  </Container>
 )
 
 export default SectionHero
