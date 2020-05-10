@@ -54,6 +54,11 @@ const NavigationLinks = styled.ul`
     margin: 0 10px;
     a {
       color: white;
+      opacity: 0.5;
+      transition: opacity 0.2s ease-in-out;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
   ${breakpoints({
@@ -70,6 +75,11 @@ const NavigationLinks = styled.ul`
 const MenuIcon = styled.img`
   height: 10px;
   padding: 10px;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
 `
 
 const Header = () => (
@@ -81,6 +91,7 @@ const Header = () => (
           <LogoText href='/'>M Haidar Hanif</LogoText>
         </LogoLink>
       </Column>
+
       <Column>
         <NavigationLinks>
           <li>

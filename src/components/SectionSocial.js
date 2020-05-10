@@ -20,6 +20,12 @@ const SocialItems = styled.ul`
   letter-spacing: 0.1em;
   li {
     margin: 10px;
+    a {
+      transition: opacity 0.2s ease-in-out;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
 `
 
