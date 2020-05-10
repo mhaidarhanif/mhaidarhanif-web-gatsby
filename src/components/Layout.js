@@ -34,7 +34,6 @@ const Layout = ({ children }) => {
         title={title}
         defaultTitle={title}
         titleAttributes={{ itemprop: 'name', lang: 'en' }}
-        base={{ target: '_blank', href: baseUrl }}
         meta={[
           { name: 'description', content: description },
           { property: 'og:title', content: title },
