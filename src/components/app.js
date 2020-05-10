@@ -2,15 +2,14 @@ import { h, Component } from 'preact'
 import { Router } from 'preact-router'
 
 import Header from './Header'
+import Footer from './Footer'
 
-// Code-splitting is automated for routes
 import Home from '../pages/home'
-import Profile from '../pages/profile'
 
 export default class App extends Component {
   /** Gets fired when the route changes.
-   *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
-   *	@param {string} event.url	The newly routed URL
+   *	@param {Object} event
+   *	@param {string} event.url
    */
   handleRoute = (event) => {
     this.currentUrl = event.url
@@ -23,9 +22,9 @@ export default class App extends Component {
 
         <Router onChange={this.handleRoute}>
           <Home path='/' />
-          <Profile path='/profile/' user='me' />
-          <Profile path='/profile/:user' />
         </Router>
+
+        <Footer />
       </div>
     )
   }
