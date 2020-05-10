@@ -40,7 +40,7 @@ const LogoIcon = styled.img`
 const LogoText = styled.span`
   color: primary;
   font-size: 1.2em;
-  font-weight: 900;
+  font-weight: 500;
   letter-spacing: 0.1em;
   padding-left: 10px;
 `
