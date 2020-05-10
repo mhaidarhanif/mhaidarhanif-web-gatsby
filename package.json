@@ -35,7 +35,8 @@
     "emotion-theming": "10.0.27",
     "preact": "^10.3.2",
     "preact-render-to-string": "^5.1.4",
-    "preact-router": "^3.2.1"
+    "preact-router": "^3.2.1",
+    "react-helmet": "6.0.0"
   },
   "jest": {
     "preset": "jest-preset-preact",
