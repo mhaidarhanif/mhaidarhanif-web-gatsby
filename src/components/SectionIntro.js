@@ -5,6 +5,7 @@ import Title from './Title'
 import Paragraph from './Paragraph'
 import LinkButtons from './LinkButtons'
 import LinkButton from './LinkButton'
+import Topics from './Topics'
 
 const Container = styled.section`
   margin: 100px 0;
@@ -13,8 +14,6 @@ const Container = styled.section`
 const Row = styled.div`
   margin: 50px 0;
 `
-
-const Topics = styled.div``
 
 const SectionIntro = () => (
   <Container>
