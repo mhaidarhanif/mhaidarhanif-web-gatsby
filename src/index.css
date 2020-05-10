@@ -27,7 +27,14 @@ h4,
 h5,
 h6 {
   font-family: 'Playfair Display', serif;
+  font-weight: normal;
   color: #cccccc;
+}
+
+p {
+  margin: 15px 0;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 a {
