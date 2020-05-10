@@ -2,7 +2,7 @@ import { h, Component } from 'preact'
 import { Router } from 'preact-router'
 import { ThemeProvider } from '@xstyled/emotion'
 
-import Header from './components/Headereader'
+import Header from './components/Header'
 import Footer from './components/Footer'
 
 import Home from './pages/home'

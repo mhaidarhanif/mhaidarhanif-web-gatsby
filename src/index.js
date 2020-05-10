@@ -1,4 +1,4 @@
 import './index.css'
-import App from './components/app'
+import App from './App'
 
 export default App
