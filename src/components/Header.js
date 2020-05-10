@@ -3,6 +3,8 @@ import { Link } from 'preact-router/match'
 import { breakpoints } from '@xstyled/system'
 import styled, { css } from '@xstyled/emotion'
 
+import pages from '../data/pages.json'
+
 const Containers = styled.nav`
   display: block;
   position: fixed;
@@ -94,15 +96,15 @@ const Header = () => (
 
       <Column>
         <NavigationLinks>
-          <li>
-            <Link href='/about'>About</Link>
-          </li>
-          <li>
-            <Link href='/contact'>Contact</Link>
-          </li>
-          <li>
-            <Link href='/projects'>Projects</Link>
-          </li>
+          {pages
+            .filter((page) => page.isNavigation)
+            .map((page, index) => {
+              return (
+                <li key={index}>
+                  <Link href={page.path}>{page.name}</Link>
+                </li>
+              )
+            })}
         </NavigationLinks>
 
         <Link href='/'>
