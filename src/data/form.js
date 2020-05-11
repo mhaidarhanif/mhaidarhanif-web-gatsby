@@ -1,3 +1,10 @@
+export const subscribe = {
+  placeholders: {
+    name: `Tim Berners-Lee`,
+    email: `tim@www.org`,
+  },
+}
+
 export const contact = {
   placeholders: {
     name: `Tim Berners-Lee`,
