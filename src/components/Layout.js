@@ -1,10 +1,29 @@
-import { h } from 'preact'
-import { breakpoints } from '@xstyled/system'
-import styled, { css } from '@xstyled/emotion'
-import Helmet from 'preact-helmet'
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
+ */
 
-import Header from './Header'
-import Footer from './Footer'
+import React from "react"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
+import styled, { css, ThemeProvider } from "@xstyled/emotion"
+import { breakpoints } from "@xstyled/system"
+
+import Header from "./Header"
+import Footer from "./Footer"
+
+import "./index.css"
+
+const theme = {
+  colors: {
+    black: "#000000",
+    white: "#ffffff",
+    primary: "#f2c94c",
+    secondary: "#222222",
+  },
+}
 
 const LayoutContainer = styled.main`
   margin: 0 auto;
@@ -20,44 +39,46 @@ const LayoutContainer = styled.main`
   })}
 `
 
+const Main = styled.main`
+  ${breakpoints({
+    lg: css`
+      padding-top: 30px;
+    `,
+  })}
+`
+
 const Layout = ({ children }) => {
-  const baseUrl = `https://mhaidarhanif.com/`
-  const title = `M Haidar Hanif`
-  const description = `Educator, Engineer, Entrepreneur. Mentoring aspiring professional web and software developers, worldwide.`
-  const imageUrl = baseUrl + `assets/og-image.jpg`
-  const url = baseUrl
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          shortTitle
+          title
+        }
+      }
+    }
+  `)
+
+  const mq = window.matchMedia("(min-width: 768px)")
+  const siteTitle = mq.matches
+    ? data.site.siteMetadata.title
+    : data.site.siteMetadata.shortTitle
 
   return (
-    <LayoutContainer>
-      <Helmet
-        htmlAttributes={{ lang: 'en', amp: undefined }} // amp takes no value
-        title={title}
-        defaultTitle={title}
-        titleAttributes={{ itemprop: 'name', lang: 'en' }}
-        meta={[
-          { name: 'description', content: description },
-          { property: 'og:title', content: title },
-          { property: 'og:description', content: description },
-          { property: 'og:image', content: imageUrl },
-          { property: 'og:url', content: url },
-        ]}
-        link={[
-          { rel: 'canonical', href: url },
-          {
-            rel: 'apple-touch-icon',
-            href: '/assets/icons/apple-touch-icon-57x57.png',
-          },
-          {
-            rel: 'apple-touch-icon',
-            sizes: '72x72',
-            href: '/assets/icons/apple-touch-icon-72x72.png',
-          },
-        ]}
-      />
-
-      {children}
-    </LayoutContainer>
+    <>
+      <ThemeProvider theme={theme}>
+        <LayoutContainer>
+          <Header siteTitle={siteTitle} />
+          <Main>{children}</Main>
+          <Footer>© {new Date().getFullYear()} M Haidar Hanif</Footer>
+        </LayoutContainer>
+      </ThemeProvider>
+    </>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout

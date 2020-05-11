@@ -1,6 +1,5 @@
-import { h } from 'preact'
-import { breakpoints } from '@xstyled/system'
-import styled, { css } from '@xstyled/emotion'
+import { breakpoints } from "@xstyled/system"
+import styled, { css } from "@xstyled/emotion"
 
 const Title = styled.h2`
   margin: 0;

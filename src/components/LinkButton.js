@@ -1,13 +1,10 @@
-import { h } from 'preact'
-import { Link } from 'preact-router/match'
-import styled, { css } from '@xstyled/emotion'
-import { variant } from '@xstyled/system'
-
-const Button = styled.button``
+import { Link } from "gatsby"
+import styled, { css } from "@xstyled/emotion"
+import { variant } from "@xstyled/system"
 
 const LinkButton = styled(Link)`
   ${variant({
-    default: 'primary',
+    default: "primary",
     variants: {
       primary: css`
         color: #000000;
