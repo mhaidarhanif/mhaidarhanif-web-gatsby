@@ -41,7 +41,7 @@ yarn
 
 ### Development
 
-Serve with hot reload at `http://localhost:3000`.
+Serve with hot reload at `http://localhost:8000`.
 
 ```sh
 yarn dev
@@ -65,7 +65,7 @@ yarn serve
 
 ### Test
 
-Run tests with jest and `preact-render-spy`.
+Run tests.
 
 ```sh
 yarn test
