@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
-import styled, { css } from "@xstyled/emotion"
 import { variant } from "@xstyled/system"
+import styled, { css } from "@xstyled/emotion"
 
 const LinkButton = styled(Link)`
   ${variant({

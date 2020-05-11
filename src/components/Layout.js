@@ -22,6 +22,7 @@ const theme = {
     white: "#ffffff",
     primary: "#f2c94c",
     secondary: "#222222",
+    tertiary: "#555555",
   },
 }
 

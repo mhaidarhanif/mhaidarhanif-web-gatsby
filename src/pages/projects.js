@@ -11,7 +11,7 @@ const ProjectsPage = () => (
     <SEO title="Projects" />
 
     <SectionContent title="Projects">
-      <p>List of my projects:</p>
+      <p>There are {projects.length} projects:</p>
       <ul>
         {projects
           .filter(project => project.isVisible !== false)

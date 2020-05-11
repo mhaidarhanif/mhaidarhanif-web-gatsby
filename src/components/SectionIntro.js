@@ -25,8 +25,8 @@ const SectionIntro = () => (
           to make a difference, let’s collaborate together.
         </Paragraph>
         <LinkButtons>
-          <LinkButton to="/collaborate" variant="primary">
-            Collaborate with Haidar
+          <LinkButton to="/contact" variant="primary">
+            Contact and Collaborate
           </LinkButton>
         </LinkButtons>
       </Row>
