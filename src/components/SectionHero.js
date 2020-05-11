@@ -2,6 +2,7 @@ import React from "react"
 import { breakpoints } from "@xstyled/system"
 import styled, { css } from "@xstyled/emotion"
 
+import Accent from "./Accent"
 import Section from "./Section"
 import Image from "./Image"
 import Paragraph from "./Paragraph"
@@ -50,13 +51,6 @@ const TitleSpecial = styled.h1`
       font-size: 3.6em;
     `,
   })}
-`
-
-const Accent = styled.div`
-  background-color: #f2c94c;
-  height: 5px;
-  width: 100px;
-  border-radius: 10px;
 `
 
 const Texts = styled.div`

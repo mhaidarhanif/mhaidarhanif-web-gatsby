@@ -8,7 +8,7 @@ const SectionContainer = styled.section`
       margin: 30px 0;
     `,
     lg: css`
-      margin: 80px 0;
+      margin: 50px 0;
     `,
   })}
 `
