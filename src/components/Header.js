@@ -1,9 +1,10 @@
-import { h } from 'preact'
-import { Link } from 'preact-router/match'
-import { breakpoints } from '@xstyled/system'
-import styled, { css } from '@xstyled/emotion'
+import React from "react"
+import PropTypes from "prop-types"
+import { Link } from "gatsby"
+import { breakpoints } from "@xstyled/system"
+import styled, { css } from "@xstyled/emotion"
 
-import pages from '../data/pages.json'
+import pages from "../data/pages.json"
 
 const Containers = styled.nav`
   display: block;
@@ -74,45 +75,39 @@ const NavigationLinks = styled.ul`
   })}
 `
 
-const MenuIcon = styled.img`
-  height: 10px;
-  padding: 10px;
-  opacity: 0.5;
-  transition: opacity 0.2s ease-in-out;
-  &:hover {
-    opacity: 1;
-  }
-`
-
-const Header = () => (
+const Header = ({ siteTitle }) => (
   <Containers>
     <Row>
       <Column>
-        <LogoLink href='/'>
-          <LogoIcon src='/assets/mhaidarhanif-icon.svg' alt='Logo Icon' />
-          <LogoText href='/'>M Haidar Hanif</LogoText>
+        <LogoLink to="/">
+          <LogoIcon src="/mhaidarhanif-icon.svg" alt="Logo Icon" />
+          <LogoText to="/">{siteTitle}</LogoText>
         </LogoLink>
       </Column>
 
       <Column>
         <NavigationLinks>
           {pages
-            .filter((page) => page.isNavigation)
+            .filter(page => page.isNavigation)
             .map((page, index) => {
               return (
                 <li key={index}>
-                  <Link href={page.path}>{page.name}</Link>
+                  <Link to={page.path}>{page.name}</Link>
                 </li>
               )
             })}
         </NavigationLinks>
-
-        <Link href='/'>
-          <MenuIcon src='/assets/menu-icon.svg' alt='Menu Icon' />
-        </Link>
       </Column>
     </Row>
   </Containers>
 )
+
+Header.propTypes = {
+  siteTitle: PropTypes.string,
+}
+
+Header.defaultProps = {
+  siteTitle: ``,
+}
 
 export default Header

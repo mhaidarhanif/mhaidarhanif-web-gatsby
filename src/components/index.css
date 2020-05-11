@@ -3,7 +3,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Rubik', 'Helvetica Neue', arial, sans-serif;
+  font-family: "Rubik", "Helvetica Neue", arial, sans-serif;
   background: #101010;
   color: #ffffff;
 }
@@ -14,12 +14,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: normal;
   color: #cccccc;
 }
 
 a {
+  background-color: transparent;
   color: #f2c94c;
   text-decoration: none;
+  -webkit-text-decoration-skip: objects;
 }

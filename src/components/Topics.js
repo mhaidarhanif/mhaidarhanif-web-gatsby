@@ -1,8 +1,7 @@
-import { h } from 'preact'
-import { breakpoints } from '@xstyled/system'
-import styled, { css } from '@xstyled/emotion'
+import React from "react"
+import styled from "@xstyled/emotion"
 
-import topics from '../data/topics.json'
+import topics from "../data/topics.json"
 
 const TopicsContainer = styled.div`
   display: flex;
@@ -22,16 +21,16 @@ const Image = styled.img``
 
 const Name = styled.span`
   margin-left: 30px;
-  font-size: 1.5em;
+  font-size: 1.2em;
 `
 
 const Topics = () => (
   <TopicsContainer>
     {topics.map((topic, index) => {
-      const slug = topic.toLowerCase().split(' ').join('-')
+      const slug = topic.toLowerCase().split(" ").join("-")
       return (
         <Topic>
-          <Image src={`/assets/topics/${slug}.svg`} alt={topic} />
+          <Image src={`/topics/${slug}.svg`} alt={topic} />
           <Name>{topic}</Name>
         </Topic>
       )

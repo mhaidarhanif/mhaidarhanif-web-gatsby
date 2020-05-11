@@ -1,18 +1,17 @@
-import { h } from 'preact'
-import { breakpoints } from '@xstyled/system'
-import styled, { css } from '@xstyled/emotion'
+import { breakpoints } from "@xstyled/system"
+import styled, { css } from "@xstyled/emotion"
 
 const Paragraph = styled.p`
   display: block;
-  line-height: 28px;
-  font-size: 0.9em;
+  margin: 20px 0;
+  line-height: 1.8em;
   ${breakpoints({
     xs: css`
       font-size: 0.9em;
       max-width: 500px;
     `,
     lg: css`
-      font-size: 1.2em;
+      font-size: 1.1em;
       max-width: 700px;
     `,
   })}

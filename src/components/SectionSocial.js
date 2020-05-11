@@ -1,7 +1,7 @@
-import { h } from 'preact'
-import styled from '@xstyled/emotion'
+import React from "react"
+import styled from "@xstyled/emotion"
 
-import socials from '../data/socials.json'
+import socials from "../data/socials.json"
 
 const SectionSocialContainers = styled.section`
   margin: 50px 0;
@@ -37,7 +37,7 @@ const SectionSocial = () => (
       {socials.map(({ name, url }, index) => {
         return (
           <SocialItem key={index}>
-            <a href={url} target='_blank'>
+            <a href={url} target="_blank" rel="noopener noreferrer">
               {name}
             </a>
           </SocialItem>

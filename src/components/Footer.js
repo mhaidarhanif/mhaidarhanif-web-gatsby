@@ -1,5 +1,5 @@
-import { h } from 'preact'
-import styled from '@xstyled/emotion'
+import React from "react"
+import styled from "@xstyled/emotion"
 
 const FooterContainer = styled.footer`
   display: flex;

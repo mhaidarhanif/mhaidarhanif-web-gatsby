@@ -1,17 +1,16 @@
-import { h } from 'preact'
-import { breakpoints } from '@xstyled/system'
-import styled, { css } from '@xstyled/emotion'
+import { breakpoints } from "@xstyled/system"
+import styled, { css } from "@xstyled/emotion"
 
 const LinkButtons = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-top: 15px;
+  font-size: 1em;
   a:nth-of-type(n + 1) {
-    margin-right: 15px;
+    margin-right: 20px;
 
     ${breakpoints({
       xs: css`
-        margin-top: 15px;
+        margin-top: 20px;
       `,
       lg: css`
         margin-top: 0;
