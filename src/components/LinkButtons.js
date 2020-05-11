@@ -6,6 +6,16 @@ const LinkButtons = styled.div`
   flex-wrap: wrap;
   font-size: 1em;
 
+  ${breakpoints({
+    xs: css`
+      flex-direction: column;
+      align-items: flex-start;
+    `,
+    lg: css`
+      flex-direction: row;
+    `,
+  })}
+
   a {
     margin-right: 20px;
   }
