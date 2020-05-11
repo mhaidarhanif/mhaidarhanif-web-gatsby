@@ -1,8 +1,16 @@
 import React from "react"
-import styled from "@xstyled/emotion"
+import { breakpoints } from "@xstyled/system"
+import styled, { css } from "@xstyled/emotion"
 
 const SectionContainer = styled.section`
-  margin: 80px 0;
+  ${breakpoints({
+    xs: css`
+      margin: 30px 0;
+    `,
+    lg: css`
+      margin: 80px 0;
+    `,
+  })}
 `
 
 const Section = ({ children }) => (

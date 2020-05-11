@@ -40,11 +40,7 @@ const LayoutContainer = styled.main`
 `
 
 const Main = styled.main`
-  ${breakpoints({
-    lg: css`
-      padding-top: 30px;
-    `,
-  })}
+  padding-top: 30px;
 `
 
 const Layout = ({ children }) => {
