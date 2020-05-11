@@ -1,54 +1,26 @@
-import Airtable from "airtable"
+import AirtablePlus from "airtable-plus"
 
-const AIRTABLE_URL = process.env.GATSBY_AIRTABLE_URL
-const AIRTABLE_API_KEY = process.env.GATSBY_AIRTABLE_API_KEY
-const AIRTABLE_BASE = process.env.GATSBY_AIRTABLE_BASE
-
-const airtableConfig = {
-  endpointUrl: AIRTABLE_URL,
-  apiKey: AIRTABLE_API_KEY,
-}
-
-Airtable.configure(airtableConfig)
-
-const base = Airtable.base(AIRTABLE_BASE)
+const base = new AirtablePlus({
+  apiKey: process.env.GATSBY_AIRTABLE_API_KEY,
+  baseID: process.env.GATSBY_AIRTABLE_BASE_ID,
+  tableName: process.env.GATSBY_AIRTABLE_TABLE_NAME,
+})
 
 const message = {
-  getGeneralMessages: tableName => {
-    base(tableName)
-      .select({
-        // Selecting the first 3 records in Grid view:
-        maxRecords: 3,
-        view: "Grid view",
-      })
-      .eachPage(
-        function page(records, fetchNextPage) {
-          // This function (`page`) will get called for each page of records.
-          records.forEach(record => {
-            console.table(record.fields)
-          })
-          // To fetch the next page of records, call `fetchNextPage`.
-          // If there are more records, `page` will get called again.
-          // If there are no more records, `done` will get called.
-          fetchNextPage()
-        },
-        function done(err) {
-          if (err) {
-            console.error(err)
-            return
-          }
-        }
-      )
-  },
-
-  createGeneralMessage: (tableName, body) => {
-    base(tableName).create(body, (err, record) => {
-      if (err) {
-        console.error(err)
-        return
+  createGeneralMessage: async body => {
+    try {
+      const response = await base.create(body)
+      return {
+        message: `Thank you ${response.fields.name} for your message!`,
+        isSuccess: true,
       }
-      console.table(record.fields)
-    })
+    } catch (error) {
+      console.error(error)
+      return {
+        message: `There is a problem when sending your message`,
+        isError: true,
+      }
+    }
   },
 }
 
