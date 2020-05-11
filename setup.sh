@@ -1,0 +1,1 @@
+cp .env.development.schema .env.development
