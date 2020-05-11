@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `M Haidar Hanif`,
+        short_name: `M Haidar Hanif`,
         start_url: `/`,
         background_color: `#101010`,
         theme_color: `#101010`,
