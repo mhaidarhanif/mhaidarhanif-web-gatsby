@@ -6,9 +6,11 @@ const SectionContainer = styled.section`
   ${breakpoints({
     xs: css`
       margin: 30px 0;
+      margin-bottom: 60px;
     `,
     lg: css`
       margin: 50px 0;
+      margin-bottom: 100px;
     `,
   })}
 `

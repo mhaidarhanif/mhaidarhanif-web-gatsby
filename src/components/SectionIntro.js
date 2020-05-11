@@ -11,7 +11,7 @@ import Topics from "./Topics"
 const Container = styled.div``
 
 const Row = styled.div`
-  padding: 50px 0;
+  padding: 30px 0;
 `
 
 const SectionIntro = () => (
