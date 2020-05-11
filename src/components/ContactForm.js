@@ -1,6 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
+import { useForm } from "react-hook-form"
 import { breakpoints, variant } from "@xstyled/system"
 import styled, { css } from "@xstyled/emotion"
+
+import { contact } from "../data/form"
 
 import message from "../utils/message"
 
@@ -35,6 +38,10 @@ const FieldSet = styled.fieldset`
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+  span {
+    font-size: 0.8em;
+    color: red;
+  }
 `
 
 const Label = styled.label`
@@ -94,63 +101,93 @@ const SubmitButton = styled.input`
   &:hover {
     opacity: 0.8;
   }
+  &:disabled {
+    background: #555555;
+  }
 `
 
+const LoadingMessage = styled.p``
+
 const ContactForm = () => {
-  const placeholders = {
-    name: `Tim Berners-Lee`,
-    title: `The Next Web`,
-    email: `tim@www.org`,
-    message: `Hello Haidar,
-    
-20 years ago, I invented the World Wide Web. For my next project, I'm building a web for open, linked data that could do for numbers what the Web did for words, pictures, video. So we can unlock our data and reframe the way we use it together.
-    
-Watch my video here: https://ted.com/talks/tim_berners_lee_the_next_web 
+  const placeholders = contact.placeholders
+  const [loading, setLoading] = useState({
+    message: ``,
+    isLoading: false,
+    isSucess: false,
+    isError: false,
+  })
+  const { register, handleSubmit, errors } = useForm()
 
-Let's collaborate!`,
-  }
+  const onSubmit = async data => {
+    setLoading({
+      ...loading,
+      isLoading: true,
+      message: `Sending your message...`,
+    })
 
-  const intentions = [
-    { value: "random", text: "Random Message" },
-    { value: "thanks", text: "Thank You Message" },
-    { value: "collaboration", text: "Collaboration Offer" },
-    { value: "project", text: "Project Offer" },
-    { value: "job", text: "Job Offer" },
-    { value: "help", text: "Asking for Help" },
-    { value: "other", text: "Other" },
-  ]
-
-  const onSubmit = () => {
     const body = {
-      name: placeholders.name,
-      email: placeholders.email,
-      intention: intentions[0].text,
-      title: placeholders.title,
-      message: placeholders.message,
+      name: data.name || placeholders.name,
+      email: data.email || placeholders.email,
+      intention: data.intention || placeholders.intentions[0].text,
+      title: data.title || placeholders.title,
+      message: data.message || placeholders.message,
     }
-    message.createGeneralMessage("General", body)
+
+    const response = await message.createGeneralMessage(body)
+
+    if (response.isSuccess) {
+      setLoading({
+        ...loading,
+        isLoading: false,
+        isSuccess: true,
+        message: response.message,
+      })
+    } else if (response.isError) {
+      setLoading({
+        ...loading,
+        isLoading: false,
+        isError: true,
+        message: response.message,
+      })
+    } else {
+      setLoading({
+        ...loading,
+        isLoading: false,
+        isError: true,
+        message: `Sorry, there is an unknown problem.`,
+      })
+    }
   }
 
   return (
-    <Form
-      onSubmit={event => {
-        event.preventDefault()
-        onSubmit()
-      }}
-    >
+    <Form onSubmit={handleSubmit(onSubmit)}>
       <FormFields>
         <FieldSet>
           <Label htmlFor="name">Your Full Name:</Label>
-          <Input name="name" type="text" placeholder={placeholders.name} />
+          <Input
+            name="name"
+            type="text"
+            placeholder={placeholders.name}
+            ref={register({ required: true, minLength: 1, maxLength: 100 })}
+          />
+          {errors.name && <span>Please tell your name</span>}
         </FieldSet>
+
         <FieldSet>
           <Label htmlFor="email">Your Email:</Label>
-          <Input name="email" type="email" placeholder={placeholders.email} />
+          <Input
+            name="email"
+            type="email"
+            placeholder={placeholders.email}
+            ref={register({ required: true })}
+          />
+          {errors.email && <span>Please tell your email</span>}
         </FieldSet>
+
         <FieldSet>
           <Label htmlFor="intention">Subject Intention:</Label>
-          <Select name="intention">
-            {intentions.map((intention, index) => {
+          <Select name="intention" ref={register({ required: true })}>
+            {placeholders.intentions.map((intention, index) => {
               return (
                 <option key={index} value={intention.value}>
                   {intention.text}
@@ -158,7 +195,9 @@ Let's collaborate!`,
               )
             })}
           </Select>
+          {errors.intention && <span>Please state a subject intention</span>}
         </FieldSet>
+
         <FieldSet>
           <Label htmlFor="title">Subject Title:</Label>
           <Input
@@ -166,8 +205,11 @@ Let's collaborate!`,
             name="title"
             type="text"
             placeholder={placeholders.title}
+            ref={register({ required: true, minLength: 3, maxLength: 200 })}
           />
+          {errors.title && <span>Please provide a title</span>}
         </FieldSet>
+
         <FieldSet>
           <Label htmlFor="message">Message:</Label>
           <TextArea
@@ -176,10 +218,20 @@ Let's collaborate!`,
             cols="30"
             rows="12"
             placeholder={placeholders.message}
+            ref={register({ required: true, minLength: 3 })}
           />
+          {errors.message && <span>Please write a message</span>}
         </FieldSet>
       </FormFields>
-      <SubmitButton variant="full" type="submit" value="Send Message" />
+
+      <SubmitButton
+        variant="full"
+        type="submit"
+        value="Send Message"
+        disabled={loading.isLoading}
+      />
+
+      <LoadingMessage>{loading.message}</LoadingMessage>
     </Form>
   )
 }
