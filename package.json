@@ -1,48 +1,50 @@
 {
   "name": "mhaidarhanif-web",
   "private": true,
+  "description": "Personal website of M Haidar Hanif",
   "version": "1.0.0",
-  "license": "MIT",
-  "scripts": {
-    "dev": "preact watch --port 3000",
-    "build": "preact build",
-    "serve": "sirv build --cors --single",
-    "lint": "eslint src",
-    "test": "jest"
-  },
-  "eslintConfig": {
-    "extends": "preact",
-    "ignorePatterns": [
-      "build/"
-    ]
-  },
-  "devDependencies": {
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-preact-pure": "^2.0.0",
-    "eslint": "^6.0.1",
-    "eslint-config-preact": "^1.1.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.9.0",
-    "jest-preset-preact": "^1.0.0",
-    "preact-cli": "^3.0.0-rc.6",
-    "preact-render-spy": "^1.2.1",
-    "sirv-cli": "^0.4.5"
-  },
+  "author": "M Haidar Hanif <npm@mhaidarhanif.com>",
   "dependencies": {
     "@emotion/core": "10.0.28",
     "@emotion/styled": "10.0.27",
     "@xstyled/emotion": "1.17.1",
     "emotion-theming": "10.0.27",
-    "preact": "^10.3.2",
-    "preact-helmet": "4.0.0-alpha-3",
-    "preact-render-to-string": "^5.1.4",
-    "preact-router": "^3.2.1"
+    "gatsby": "^2.21.21",
+    "gatsby-image": "^2.4.3",
+    "gatsby-plugin-emotion": "4.3.1",
+    "gatsby-plugin-google-fonts-v2": "0.0.6",
+    "gatsby-plugin-manifest": "^2.4.2",
+    "gatsby-plugin-offline": "^3.2.1",
+    "gatsby-plugin-react-helmet": "^3.3.1",
+    "gatsby-plugin-sharp": "^2.6.2",
+    "gatsby-source-filesystem": "^2.3.1",
+    "gatsby-transformer-sharp": "^2.5.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.0.0"
   },
-  "jest": {
-    "preset": "jest-preset-preact",
-    "setupFiles": [
-      "<rootDir>/tests/__mocks__/browserMocks.js",
-      "<rootDir>/tests/__mocks__/setupTests.js"
-    ]
+  "devDependencies": {
+    "prettier": "2.0.5"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhaidarh/mhaidarhanif-web"
+  },
+  "bugs": {
+    "url": "https://github.com/mhaidarh/mhaidarhanif-web/issues"
   }
 }

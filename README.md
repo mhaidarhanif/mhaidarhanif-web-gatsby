@@ -23,8 +23,9 @@ Visit it live on [mhaidarhanif.com](https://mhaidarhanif.com)
 - CSS
 - JavaScript
 - React
-- Preact
+- GatsbyJS
 - xstyled
+- emotion
 - Netlify
 
 ## 🛠️ Usage
