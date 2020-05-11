@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { breakpoints } from "@xstyled/system"
 import styled, { css } from "@xstyled/emotion"
 
@@ -33,17 +34,22 @@ const Content = styled.div`
   })}
 `
 
-const SectionContent = ({ children }) => (
+const SectionContent = ({ title, children }) => (
   <Section>
     <Article>
       <Header>
         <Accent />
-        <Title>About Haidar</Title>
+        <Title>{title}</Title>
       </Header>
 
       <Content>{children}</Content>
     </Article>
   </Section>
 )
+
+SectionContent.propTypes = {
+  title: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
+}
 
 export default SectionContent

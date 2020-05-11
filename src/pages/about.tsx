@@ -1,7 +1,5 @@
 import React from "react"
 import { PageProps } from "gatsby"
-import { breakpoints } from "@xstyled/system"
-import styled, { css } from "@xstyled/emotion"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"

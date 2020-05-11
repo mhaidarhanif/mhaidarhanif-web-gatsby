@@ -2,11 +2,15 @@ import React from "react"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
+import SectionContent from "../components/SectionContent"
 
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
-    <h1>Contact Form</h1>
+
+    <SectionContent title="Contact Haidar">
+      <p>Contact Form</p>
+    </SectionContent>
   </Layout>
 )
 
