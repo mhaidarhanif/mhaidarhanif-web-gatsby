@@ -59,10 +59,7 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const mq = window.matchMedia("(min-width: 768px)")
-  const siteTitle = mq.matches
-    ? data.site.siteMetadata.title
-    : data.site.siteMetadata.shortTitle
+  const siteTitle = data.site.siteMetadata.shortTitle
 
   return (
     <>
