@@ -37,7 +37,7 @@ const LogoLink = styled(Link)`
 `
 
 const LogoIcon = styled.img`
-  height: 30px;
+  width: 30px;
 `
 
 const LogoText = styled.span`
@@ -75,6 +75,17 @@ const NavigationLinks = styled.ul`
   })}
 `
 
+const MenuIcon = styled.img`
+  cursor: pointer;
+  width: 30px;
+  padding: 10px;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+`
+
 const Header = ({ siteTitle }) => (
   <Containers>
     <Row>
@@ -97,6 +108,7 @@ const Header = ({ siteTitle }) => (
               )
             })}
         </NavigationLinks>
+        <MenuIcon src="/menu-icon.svg" alt="Menu Icon" />
       </Column>
     </Row>
   </Containers>
