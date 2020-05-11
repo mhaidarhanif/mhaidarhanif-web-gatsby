@@ -2,6 +2,8 @@ import React from "react"
 import { breakpoints, variant } from "@xstyled/system"
 import styled, { css } from "@xstyled/emotion"
 
+import message from "../utils/message"
+
 const compactOrFull = {
   default: "compact",
   variants: {
@@ -99,8 +101,15 @@ const ContactForm = () => {
     name: `Tim Berners-Lee`,
     title: `The Next Web`,
     email: `tim@www.org`,
-    message: `20 years ago, I invented the World Wide Web. For my next project, I'm building a web for open, linked data that could do for numbers what the Web did for words, pictures, video. So we can unlock our data and reframe the way we use it together. Let's collaborate!`,
+    message: `Hello Haidar,
+    
+20 years ago, I invented the World Wide Web. For my next project, I'm building a web for open, linked data that could do for numbers what the Web did for words, pictures, video. So we can unlock our data and reframe the way we use it together.
+    
+Watch my video here: https://ted.com/talks/tim_berners_lee_the_next_web 
+
+Let's collaborate!`,
   }
+
   const intentions = [
     { value: "random", text: "Random Message" },
     { value: "thanks", text: "Thank You Message" },
@@ -108,10 +117,27 @@ const ContactForm = () => {
     { value: "project", text: "Project Offer" },
     { value: "job", text: "Job Offer" },
     { value: "help", text: "Asking for Help" },
+    { value: "other", text: "Other" },
   ]
 
+  const onSubmit = () => {
+    const body = {
+      name: placeholders.name,
+      email: placeholders.email,
+      intention: intentions[0].text,
+      title: placeholders.title,
+      message: placeholders.message,
+    }
+    message.createGeneralMessage("General", body)
+  }
+
   return (
-    <Form>
+    <Form
+      onSubmit={event => {
+        event.preventDefault()
+        onSubmit()
+      }}
+    >
       <FormFields>
         <FieldSet>
           <Label htmlFor="name">Your Full Name:</Label>
@@ -125,7 +151,11 @@ const ContactForm = () => {
           <Label htmlFor="intention">Subject Intention:</Label>
           <Select name="intention">
             {intentions.map((intention, index) => {
-              return <option value={intention.value}>{intention.text}</option>
+              return (
+                <option key={index} value={intention.value}>
+                  {intention.text}
+                </option>
+              )
             })}
           </Select>
         </FieldSet>
@@ -144,7 +174,7 @@ const ContactForm = () => {
             variant="full"
             name="message"
             cols="30"
-            rows="10"
+            rows="12"
             placeholder={placeholders.message}
           />
         </FieldSet>

@@ -24,9 +24,8 @@ const message = {
       .eachPage(
         function page(records, fetchNextPage) {
           // This function (`page`) will get called for each page of records.
-          records.forEach(function (record) {
-            const text = record.get("title")
-            alert(text)
+          records.forEach(record => {
+            console.table(record.fields)
           })
           // To fetch the next page of records, call `fetchNextPage`.
           // If there are more records, `page` will get called again.
@@ -48,8 +47,7 @@ const message = {
         console.error(err)
         return
       }
-      const text = record.get("title")
-      alert(text)
+      console.table(record.fields)
     })
   },
 }
