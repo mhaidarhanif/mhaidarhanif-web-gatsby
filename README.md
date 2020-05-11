@@ -18,15 +18,16 @@ Visit it live on [mhaidarhanif.com](https://mhaidarhanif.com)
 
 ## 🥞 Stack
 
-- Figma
-- HTML
-- CSS
-- JavaScript
-- React
-- GatsbyJS
-- xstyled
-- emotion
-- Netlify
+- [Figma](https://figma.com)
+- [HTML](https://developer.mozilla.org/HTML)
+- [CSS](https://developer.mozilla.org/CSS)
+- [JavaScript](https://developer.mozilla.org/JavaScript)
+- [React](https://reactjs.org)
+- [GatsbyJS](https://gatsbyjs.org)
+- [xstyled](https://xstyled.dev)
+- [emotion](https://emotion.sh)
+- [Netlify](https://netlify.com)
+- [Cloudflare](https://cloudflare.com)
 
 ## 🛠️ Usage
 
