@@ -25,3 +25,9 @@ a {
   text-decoration: none;
   -webkit-text-decoration-skip: objects;
 }
+
+p {
+  letter-spacing: 0.05em;
+  line-height: 1.8em;
+  color: #eeeeee;
+}
