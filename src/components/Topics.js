@@ -29,7 +29,7 @@ const Topics = () => (
     {topics.map((topic, index) => {
       const slug = topic.toLowerCase().split(" ").join("-")
       return (
-        <Topic>
+        <Topic key={index}>
           <Image src={`/topics/${slug}.svg`} alt={topic} />
           <Name>{topic}</Name>
         </Topic>
