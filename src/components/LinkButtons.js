@@ -5,9 +5,12 @@ const LinkButtons = styled.div`
   display: flex;
   flex-wrap: wrap;
   font-size: 1em;
-  a:nth-of-type(n + 1) {
-    margin-right: 20px;
 
+  a {
+    margin-right: 20px;
+  }
+
+  a:nth-of-type(2n) {
     ${breakpoints({
       xs: css`
         margin-top: 20px;

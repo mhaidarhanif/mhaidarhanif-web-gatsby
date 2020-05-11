@@ -48,7 +48,7 @@ const TitleSpecial = styled.h1`
       font-size: 3em;
     `,
     md: css`
-      font-size: 3.6em;
+      font-size: 3.5em;
     `,
   })}
 `
