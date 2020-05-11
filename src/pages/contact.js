@@ -12,8 +12,10 @@ const ContactPage = () => {
 
       <SectionContent title="Contact Haidar">
         <p>
-          Whenever you need help or have a question, you can contact Haidar with
-          this form. Haidar will get back to you soon after that.
+          You can contact Haidar through this form whenever you need help, have
+          a question, or offering something. Haidar will get back to you soon
+          after you sent a message with clear details (name, email, intention,
+          and content).
         </p>
 
         <ContactForm />

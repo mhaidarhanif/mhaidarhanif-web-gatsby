@@ -101,8 +101,9 @@ const ContactForm = () => {
     email: `tim@www.org`,
     message: `20 years ago, I invented the World Wide Web. For my next project, I'm building a web for open, linked data that could do for numbers what the Web did for words, pictures, video. So we can unlock our data and reframe the way we use it together. Let's collaborate!`,
   }
-  const categories = [
+  const intentions = [
     { value: "random", text: "Random Message" },
+    { value: "thanks", text: "Thank You Message" },
     { value: "collaboration", text: "Collaboration Offer" },
     { value: "project", text: "Project Offer" },
     { value: "job", text: "Job Offer" },
@@ -121,10 +122,10 @@ const ContactForm = () => {
           <Input name="email" type="email" placeholder={placeholders.email} />
         </FieldSet>
         <FieldSet>
-          <Label htmlFor="category">Subject Category:</Label>
-          <Select name="category">
-            {categories.map((category, index) => {
-              return <option value={category.value}>{category.text}</option>
+          <Label htmlFor="intention">Subject Intention:</Label>
+          <Select name="intention">
+            {intentions.map((intention, index) => {
+              return <option value={intention.value}>{intention.text}</option>
             })}
           </Select>
         </FieldSet>
