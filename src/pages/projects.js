@@ -12,7 +12,7 @@ const ProjectsPage = () => (
 
     <SectionContent title="Projects">
       <p>There are {projects.length} projects:</p>
-      <ul>
+      <ol>
         {projects
           .filter(project => project.isVisible !== false)
           .map((project, index) => {
@@ -25,7 +25,7 @@ const ProjectsPage = () => (
               </li>
             )
           })}
-      </ul>
+      </ol>
     </SectionContent>
   </Layout>
 )

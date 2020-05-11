@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "@xstyled/emotion"
 
+import Anchor from "../components/Anchor"
+
 import socials from "../data/socials.json"
 
 const FooterContainer = styled.footer`
@@ -53,9 +55,9 @@ const Footer = () => {
           {socials.map(({ name, url }, index) => {
             return (
               <SocialItem key={index}>
-                <a href={url} target="_blank" rel="noopener noreferrer">
+                <Anchor href={url} target="_blank" rel="noopener noreferrer">
                   {name}
-                </a>
+                </Anchor>
               </SocialItem>
             )
           })}
