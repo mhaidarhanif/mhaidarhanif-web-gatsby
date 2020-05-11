@@ -31,3 +31,36 @@ p {
   line-height: 1.8em;
   color: #eeeeee;
 }
+
+input,
+select,
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+input:not([type="submit"]):focus,
+select:not([type="submit"]):focus,
+textarea:not([type="submit"]):focus {
+  border: 5px solid #f2c94c;
+}
+
+::placeholder {
+  color: #aaaaaa;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+
+::-ms-input-placeholder {
+  color: #aaaaaa;
+}
