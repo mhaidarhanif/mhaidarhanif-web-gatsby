@@ -86,13 +86,13 @@ const MenuIcon = styled.img`
   }
 `
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteName }) => (
   <Containers>
     <Row>
       <Column>
         <LogoLink to="/">
           <LogoIcon src="/mhaidarhanif-icon.svg" alt="Logo Icon" />
-          <LogoText to="/">{siteTitle}</LogoText>
+          <LogoText to="/">{siteName}</LogoText>
         </LogoLink>
       </Column>
 

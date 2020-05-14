@@ -49,20 +49,19 @@ const Layout = ({ children }) => {
     query SiteTitleQuery {
       site {
         siteMetadata {
-          shortTitle
-          title
+          name
         }
       }
     }
   `)
 
-  const siteTitle = data.site.siteMetadata.shortTitle
+  const siteName = data.site.siteMetadata.name
 
   return (
     <>
       <ThemeProvider theme={theme}>
         <LayoutContainer>
-          <Header siteTitle={siteTitle} />
+          <Header siteName={siteName} />
           <Main>{children}</Main>
           <Footer>© {new Date().getFullYear()} M Haidar Hanif</Footer>
         </LayoutContainer>
