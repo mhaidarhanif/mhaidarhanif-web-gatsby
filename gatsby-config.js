@@ -4,10 +4,13 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    shortTitle: `M Haidar Hanif`,
-    title: `M Haidar Hanif · Educator, Engineer, Explorer`,
+    name: "M Haidar Hanif",
+    title: "M Haidar Hanif · Educator, Engineer, Explorer",
+    titleTemplate: "%s –  M Haidar Hanif · Educator, Engineer, Explorer",
     description: `Educating and mentoring aspiring worldwide professional web and software developers.`,
-    author: `@mhaidarh`,
+    url: "https://mhaidarhanif.com",
+    image: "/mhaidarhanif.jpg",
+    twitterUsername: "@mhaidarh",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
