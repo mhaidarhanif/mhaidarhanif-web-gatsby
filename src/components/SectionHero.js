@@ -73,15 +73,12 @@ const SectionHero = () => (
             Haidar is a seasoned tech educator and engineer who mentor people in
             software engineering, web development, and industrial career. Beyond
             that, he’s exploring various experiments to solve world problems.
-            Especially helping people’s career in the software industry.
-            Normally he doesn’t talk in a 3rd person view.
+            Especially helping people’s career in the software industry by
+            mentoring them. Normally he doesn’t talk in a 3rd person view.
           </Paragraph>
 
           <LinkButtons>
-            <LinkButton to="/projects" variant="primary">
-              Check His Projects
-            </LinkButton>
-            <LinkButton to="/contact" variant="secondary">
+            <LinkButton to="/contact" variant="primary">
               Contact Haidar
             </LinkButton>
           </LinkButtons>

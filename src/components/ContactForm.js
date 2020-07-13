@@ -75,6 +75,7 @@ const Select = styled.select`
 `
 
 const TextArea = styled.textarea`
+  font-family: "Rubik", "Helvetica Neue", arial, sans-serif;
   resize: vertical;
   padding: 10px;
   font-size: 1em;
