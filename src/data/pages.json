@@ -16,11 +16,11 @@
   {
     "name": "Blog",
     "path": "/blog",
-    "isNavigation": true
+    "isNavigation": false
   },
   {
     "name": "Projects",
     "path": "/projects",
-    "isNavigation": true
+    "isNavigation": false
   }
 ]
