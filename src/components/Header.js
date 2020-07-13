@@ -66,11 +66,8 @@ const NavigationLinks = styled.ul`
   }
   ${breakpoints({
     xs: css`
-      justify-content: space-between;
-      display: none;
-    `,
-    md: css`
       display: flex;
+      justify-content: space-between;
     `,
   })}
 `
@@ -108,7 +105,6 @@ const Header = ({ siteName }) => (
               )
             })}
         </NavigationLinks>
-        <MenuIcon src="/menu-icon.svg" alt="Menu Icon" />
       </Column>
     </Row>
   </Containers>
