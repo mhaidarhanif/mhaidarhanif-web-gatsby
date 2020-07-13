@@ -4,10 +4,11 @@ import styled, { css } from "@xstyled/emotion"
 
 import Accent from "./Accent"
 import Section from "./Section"
-import Image from "./Image"
 import Paragraph from "./Paragraph"
 import LinkButtons from "./LinkButtons"
 import LinkButton from "./LinkButton"
+
+import HaidarPhoto from "./HaidarPhoto"
 
 const Container = styled.div`
   display: flex;
@@ -70,11 +71,10 @@ const SectionHero = () => (
 
         <Texts>
           <Paragraph>
-            Haidar is a seasoned tech educator and engineer who mentor people in
-            software engineering, web development, and industrial career. Beyond
-            that, he’s exploring various experiments to solve world problems.
-            Especially helping people’s career in the software industry by
-            mentoring them. Normally he doesn’t talk in a 3rd person view.
+            Haidar is a seasoned tech educator and engineer in the world of
+            software engineering and web development. Currently he focuses on
+            helping people to start and grow their career in the modern software
+            industry.
           </Paragraph>
 
           <LinkButtons>
@@ -86,7 +86,7 @@ const SectionHero = () => (
       </Column>
 
       <Column>
-        <Image />
+        <HaidarPhoto />
       </Column>
     </Container>
   </Section>

@@ -7,11 +7,11 @@ const Paragraph = styled.p`
   line-height: 1.8em;
   ${breakpoints({
     xs: css`
-      font-size: 0.9em;
+      font-size: 1em;
       max-width: 500px;
     `,
     lg: css`
-      font-size: 1.1em;
+      font-size: 1.4em;
       max-width: 700px;
     `,
   })}

@@ -72,17 +72,6 @@ const NavigationLinks = styled.ul`
   })}
 `
 
-const MenuIcon = styled.img`
-  cursor: pointer;
-  width: 30px;
-  padding: 10px;
-  opacity: 0.5;
-  transition: opacity 0.2s ease-in-out;
-  &:hover {
-    opacity: 1;
-  }
-`
-
 const Header = ({ siteName }) => (
   <Containers>
     <Row>

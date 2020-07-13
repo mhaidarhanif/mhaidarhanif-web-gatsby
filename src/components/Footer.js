@@ -10,10 +10,10 @@ const FooterContainer = styled.footer`
   flex-direction: column;
   align-items: center;
   padding: 50px;
+  margin: 50px 0;
 `
 
 const SocialContainer = styled.section`
-  margin: 50px 0;
   display: flex;
   justify-content: center;
 `
@@ -50,6 +50,9 @@ const Footer = () => {
 
   return (
     <FooterContainer>
+      <div>
+        <h3>Connect on Social Media</h3>
+      </div>
       <SocialContainer>
         <SocialItems>
           {socials.map(({ name, url }, index) => {

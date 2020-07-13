@@ -20,13 +20,12 @@ const SectionIntro = () => (
       <Row>
         <Title>Solving world problems, together</Title>
         <Paragraph>
-          Earth and human have many problems. Including ours. We just have to
-          get more people to solve them. If you are one of the people who care
-          to make a difference, let’s collaborate together.
+          Let's solve world's problems. If you are one of the people who care to
+          make a difference, we can collaborate together.
         </Paragraph>
         <LinkButtons>
           <LinkButton to="/contact" variant="primary">
-            Contact and Collaborate
+            Connect and Collaborate
           </LinkButton>
         </LinkButtons>
       </Row>
