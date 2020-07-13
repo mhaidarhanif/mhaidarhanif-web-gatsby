@@ -12,19 +12,17 @@ const AboutPage = (props: PageProps) => (
 
     <SectionContent title="About Haidar">
       <p>
-        Haidar is an educator, engineer, explorer, designer, innovator, and
-        consultant. An avid remote worker and digital nomad.
+        Haidar is an educator, engineer, explorer, designer, innovator,
+        consultant, and mentor. An avid remote worker and digital nomad.
       </p>
       <p>
         He is now focusing to develop an education venture that supports distant
         learning and remote work named{" "}
         <Anchor href="https://azobu.com">Azobu</Anchor>, which helps people to
-        start their career in the software industry. Currently teaching{" "}
-        <Anchor href="https://azobu.com/private-training">
-          online private mentorship
-        </Anchor>{" "}
-        there as well. Furthermore, he's developing a highly-skilled
-        professionals community named{" "}
+        start and grow their career in the software industry. Currently doing{" "}
+        <Anchor href="https://azobu.com/mentorship">mentorship</Anchor> there as
+        well. Furthermore, he's developing a highly-skilled professionals
+        community named{" "}
         <Anchor href="https://highskillmasters.com">High Skill Masters</Anchor>.
         Previously, he was also founding a coding school named{" "}
         <Anchor href="https://impactbyte.com/about">Impact Byte</Anchor> and
@@ -32,20 +30,21 @@ const AboutPage = (props: PageProps) => (
         <Anchor href="https://hacktiv8.com">Hacktiv8</Anchor>. Few years ago, he
         was a software engineer in{" "}
         <Anchor href="https://agnium.co.id">Agnium</Anchor> and{" "}
-        <Anchor href="https://amp.asia">AMPlified</Anchor>.
+        <Anchor href="https://amp.asia">AMPlified</Anchor>. Along the way, he
+        was also doing some freelance web development, software development, and
+        people training.
       </p>
       <p>
         His specialties in the last 5 years are often focused on developing,
-        integrating, and teaching software technologies. Especially full-stack
-        web application development, design, and architecture around various
-        open-source toolsets,{" "}
+        integrating, and teaching modern software technologies. Especially
+        full-stack web application development, design, and architecture around
+        various open-source toolsets,{" "}
         <Anchor href="https://developer.mozilla.org/JavaScript">
           JavaScript (ES)
         </Anchor>{" "}
         and <Anchor href="https://typescriptlang.org">TypeScript (TS)</Anchor>{" "}
         along with <Anchor href="https://nodejs.org">Node.js</Anchor>,{" "}
-        <Anchor href="https://deno.land">Deno</Anchor>,{" "}
-        <Anchor href="https://expressjs.com">Express</Anchor>,
+        <Anchor href="https://deno.land">Deno</Anchor>, Express,
         REST/GraphQL/WebSocket API, jQuery/Zepto, React/Vue/Angular, Redux,
         MongoDB, MySQL/MariaDB, PostgreSQL, Redis, Jest/Mocha/Chai, Agile/Lean
         Software Development with Scrum/Kanban, system administration with
