@@ -15,7 +15,7 @@ import styled, { css } from "@xstyled/emotion"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const PhotoContainer = styled(Img)`
+const Image = styled(Img)`
   border: 5px solid #222222;
   box-sizing: border-box;
   border-radius: 10px;
@@ -30,7 +30,7 @@ const PhotoContainer = styled(Img)`
   })}
 `
 
-const Image = () => {
+const HaidarPhoto = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "mhaidarhanif-photo.jpg" }) {
@@ -43,7 +43,7 @@ const Image = () => {
     }
   `)
 
-  return <PhotoContainer fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Image fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-export default Image
+export default HaidarPhoto
