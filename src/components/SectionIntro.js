@@ -18,14 +18,15 @@ const SectionIntro = () => (
   <Section>
     <Container>
       <Row>
-        <Title>Solving world problems, together</Title>
+        <Title>Solving problems, together</Title>
         <Paragraph>
-          Let's solve world's problems. If you are one of the people who care to
-          make a difference, we can collaborate together.
+          Let's solve world's or your problems related to career, education, and
+          technology. If you are one of the people who care to make a
+          difference, we can work together.
         </Paragraph>
         <LinkButtons>
           <LinkButton to="/contact" variant="primary">
-            Connect and Collaborate
+            Contact to Connect
           </LinkButton>
         </LinkButtons>
       </Row>

@@ -1,8 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { breakpoints } from "@xstyled/system"
-import styled, { css } from "@xstyled/emotion"
+import styled from "@xstyled/emotion"
 
 const Image = styled(Img)`
   border: 5px solid #222222;

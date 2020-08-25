@@ -71,15 +71,14 @@ const SectionHero = () => (
 
         <Texts>
           <Paragraph>
-            Haidar is a seasoned tech educator and engineer in the world of
-            software engineering and web development. Currently he focuses on
-            helping people to start and grow their career in the modern software
-            industry.
+            I am Haidar, a tech educator and engineer in the world of software
+            engineering and web development. Currently focuses on helping people
+            to start and grow their career in the modern software industry.
           </Paragraph>
 
           <LinkButtons>
             <LinkButton to="/contact" variant="primary">
-              Contact Haidar
+              Read More
             </LinkButton>
           </LinkButtons>
         </Texts>

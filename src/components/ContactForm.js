@@ -228,7 +228,7 @@ const ContactForm = () => {
       <SubmitButton
         variant="full"
         type="submit"
-        value="Send Message"
+        value={loading.isLoading ? "Sending..." : "Send Message"}
         disabled={loading.isLoading}
       />
 
