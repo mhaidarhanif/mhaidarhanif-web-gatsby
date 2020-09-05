@@ -1,20 +1,22 @@
 <h1 align="center">M Haidar Hanif Web</h1>
 <p>
-  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/mhaidarh/mhaidarhanif-web">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-black.svg" target="_blank" />
   </a>
+  <img src="https://img.shields.io/badge/version-0.1.0-black.svg?cacheSeconds=2592000" />
   <a href="https://opensource.org/licenses/MIT">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-black.svg" target="_blank" />
   </a>
   <a href="https://twitter.com/mhaidarh">
     <img alt="Twitter: mhaidarh" src="https://img.shields.io/twitter/follow/mhaidarh.svg?style=social" target="_blank" />
   </a>
 </p>
 
-> Personal web of M Haidar Hanif
+> Personal page of M Haidar Hanif
 
-Visit it live on [mhaidarhanif.com](https://mhaidarhanif.com)
+You can visit it live on [mhaidarhanif.com](https://mhaidarhanif.com)
+
+The API will be available on [api.mhaidarhanif.com](https://mhaidarhanif.com)
 
 ## 🥞 Stack
 
@@ -23,11 +25,13 @@ Visit it live on [mhaidarhanif.com](https://mhaidarhanif.com)
 - [CSS](https://developer.mozilla.org/CSS)
 - [JavaScript](https://developer.mozilla.org/JavaScript)
 - [React](https://reactjs.org)
-- [GatsbyJS](https://gatsbyjs.org)
+- [GatsbyJS]()
 - [xstyled](https://xstyled.dev)
 - [emotion](https://emotion.sh)
 - [Netlify](https://netlify.com)
+- [Google Cloud Platform]()
 - [Cloudflare](https://cloudflare.com)
+- [Uniregistry]()
 
 ## 🛠️ Usage
 
@@ -41,11 +45,13 @@ yarn
 
 ### Development
 
-Serve with hot reload at `http://localhost:8000`.
+Run development server:
 
 ```sh
 yarn dev
 ```
+
+Then it should open `http://localhost:8000`.
 
 ### Build
 
@@ -57,7 +63,7 @@ yarn build
 
 ### Serve
 
-Serve the production build locally.
+Serve the production build locally:
 
 ```sh
 yarn serve
@@ -65,7 +71,7 @@ yarn serve
 
 ### Test
 
-Run tests.
+Run test suite:
 
 ```sh
 yarn test
@@ -75,10 +81,10 @@ yarn test
 
 Haidar is available on multiple social media:
 
+- Twitter: [@mhaidarh](https://twitter.com/mhaidarh)
 - LinkedIn: [@mhaidarhanif](https://linkedin.com/in/mhaidarhanif)
 - Facebook: [@mhaidarhanif](https://facebook.com/mhaidarhanif)
 - Instagram: [@mhaidarh](https://instagram.com/mhaidarh)
-- Twitter: [@mhaidarh](https://twitter.com/mhaidarh)
 - GitHub: [@mhaidarh](https://github.com/mhaidarh)
 - GitLab: [@mhaidarh](https://gitlab.com/mhaidarh)
 - Dev.to: [@mhaidarh](https://dev.to/mhaidarh)
@@ -86,7 +92,8 @@ Haidar is available on multiple social media:
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome! Feel free to check [issues page](https://github.com/mhaidarh/mhaidarhanif-web/issues).
+Contributions, issues and feature requests are welcome!
+Feel free to check [issues page](https://github.com/mhaidarh/mhaidarhanif-web/issues).
 
 ## 🎁 Show your support
 
