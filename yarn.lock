@@ -924,10 +924,10 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2", "@babel/runtime@^7.9.6":
-  version "7.9.6"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.6.tgz#a9102eb5cadedf3f31d08a9ecf294af7827ea29f"
-  integrity sha512-64AF1xY3OAkFHqOb9s4jpgk1Mm5vDZ4L3acHvAml+53nO1XbXLuDodsVpO4OIUsmemlUHMxNdYMNJmsvOwLrvQ==
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2", "@babel/runtime@^7.9.6":
+  version "7.11.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
+  integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -6447,12 +6447,12 @@ gatsby-page-utils@^0.2.1:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-emotion@4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-4.3.1.tgz#0485579a1f5ab4ddb563ee097d2f913c1bd9a606"
-  integrity sha512-DlQSRQ7TlwQxbuzcUzn97lyj11k2Osk0F5J4ntHm/op35daBI4bcfLbB3B6P86nSAfOZc9427d/Rz1tgtVYqjQ==
+gatsby-plugin-emotion@4.3.13:
+  version "4.3.13"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-4.3.13.tgz#31892636d78f607f3453919b3e60c90099630fb8"
+  integrity sha512-KffUzoa0I6UpeCpupKGCd3hMoH6NrsWvgYFWlKrkq7SbThN/6m99SjD+1wnYo/Hnn/+Aw4IUSUMZG+EA6Rf8Wg==
   dependencies:
-    "@babel/runtime" "^7.9.6"
+    "@babel/runtime" "^7.11.2"
     "@emotion/babel-preset-css-prop" "^10.0.27"
 
 gatsby-plugin-google-fonts-v2@0.0.6:
