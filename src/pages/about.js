@@ -37,10 +37,9 @@ const AboutPage = (props: PageProps) => (
         <h2>Works</h2>
         <p>
           I am now focusing to develop an education venture that supports
-          distant learning and remote work. It is named{" "}
-          <Anchor href="https://azobu.com">Azobu</Anchor>, a platform that helps
-          people to start and grow their career in the software industry.
-          Currently doing{" "}
+          distant learning and remote work. It is named Catamyst, a platform
+          that helps people to start and grow their career in the software
+          industry. Currently doing{" "}
           <Anchor href="https://azobu.com/mentorship">
             private mentorship
           </Anchor>{" "}
@@ -52,27 +51,29 @@ const AboutPage = (props: PageProps) => (
           .
         </p>
         <p>
-          I have founded founded a coding school named{" "}
+          Previously I have founded a coding school named{" "}
           <Anchor href="https://impactbyte.com/about">Impact Byte</Anchor>.
-          Previously worked with a coding school named{" "}
+          Before that, I worked with a coding school named{" "}
           <Anchor href="https://hacktiv8.com">Hacktiv8</Anchor>. In the
-          beginning of my career, I was a software engineer in{" "}
+          beginning of my career, I was a software engineer and trainer in{" "}
           <Anchor href="https://agnium.co.id">Agnium</Anchor> and{" "}
-          <Anchor href="https://amp.asia">AMPlified</Anchor>. During that time,
-          I was also doing some freelance projects of web development, software
-          development, and technical training.
+          <Anchor href="https://amp.asia">AMPlified</Anchor>. During and before
+          that time, I was also doing some freelance projects of web
+          development, software development, and technical training with various
+          technologies.
         </p>
       </div>
 
       <div>
         <h2>Specialties</h2>
         <p>
-          These days, I'm most often called a "Full Stack Developer" today. My
-          specialties in the last 5 years are often focused on developing,
-          integrating, and teaching modern software technologies. Especially
-          full-stack web application development, design, and architecture
-          around various open-source toolsets, namely:
-          <SpecialtyLinks></SpecialtyLinks>
+          Usually I'm most often called a "Full Stack Developer" today. Doing
+          everything design, content, frontend, backend, infrastructure, and
+          business. My specialties in the last 5 to 10 years are often focused
+          on developing, integrating, and teaching modern software technologies.
+          Especially full-stack web application development, design, and
+          architecture around various open-source toolsets, namely:
+          <SpecialtyLinks />
         </p>
       </div>
 
