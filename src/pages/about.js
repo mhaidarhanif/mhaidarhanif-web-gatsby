@@ -40,7 +40,7 @@ const AboutPage = (props: PageProps) => (
           distant learning and remote work. It is named Catamyst, a platform
           that helps people to start and grow their career in the software
           industry. Currently doing{" "}
-          <Anchor href="https://azobu.com/mentorship">
+          <Anchor href="https://catamyst.com">
             private mentorship
           </Anchor>{" "}
           there as well. Furthermore, I'm developing a highly-skilled
