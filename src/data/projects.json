@@ -6,7 +6,7 @@
     "slug": "acme-inc",
     "description": "Professional company website inspired by Intel, IBM, Tesla, Apple, Microsoft, GV, General Motors, General Electric, and other cool companies that spark innovation.",
     "shortUrl": "acme.inc",
-    "url": "https://acme.azobu.app"
+    "url": "https://acme.catamyst.com"
   },
   {
     "image": "/apps/jankenpon.jpg",
@@ -15,7 +15,7 @@
     "slug": "jankenpon",
     "description": "じゃんけんぽん (Jankenpon) is a Japanese game of rock paper scissors. Players battle in which each simultaneously forms one of three shapes (🗿/📄/✂️).",
     "shortUrl": "jankenpon.games",
-    "url": "https://jankenpon.azobu.app"
+    "url": "https://jankenpon.catamyst.com"
   },
   {
     "image": "",
@@ -24,7 +24,7 @@
     "slug": "yesdo",
     "description": "Note-taking and todo app at the same time, inspired by Google Keep, Google Todo, Trello, Asana, and other too many alternative of productivity apps out there in the world.",
     "shortUrl": "yesdo.app",
-    "url": "https://yesdo.azobu.app"
+    "url": "https://yesdo.catamyst.com"
   },
   {
     "image": "",
@@ -33,7 +33,7 @@
     "slug": "whoop",
     "description": "Contact manager or address book inspired by Google Contacts, FullContact, Covve, Evernote, and utilty that save people's information. So you can be excited with your close friends and family.",
     "shortUrl": "whoop.app",
-    "url": "https://whoop.azobu.app"
+    "url": "https://whoop.catamyst.com"
   },
   {
     "image": "",
@@ -42,7 +42,7 @@
     "slug": "way-weather",
     "description": "Weather information site inspired by Weather.com, Time.is, Every Time Zone, and other data dashboard that show you current or live condition in your respected area.",
     "shortUrl": "wayweather.app",
-    "url": "https://wayweather.azobu.app"
+    "url": "https://wayweather.catamyst.com"
   },
   {
     "image": "",
@@ -51,7 +51,7 @@
     "slug": "linkbranches",
     "description": "Simple site to display links that connect your followers to multiple destinations, inspired by Linktree. You can customize it like linkbranch.es/yourname then put it on your Instagram.",
     "shortUrl": "linkbranch.es",
-    "url": "https://linkbranches.azobu.app"
+    "url": "https://linkbranches.catamyst.com"
   },
   {
     "image": "",
@@ -60,7 +60,7 @@
     "slug": "bitely",
     "description": "URL shortener as competitor of Bit.ly, Bl.ink, and Rebrandly. Let's shorten links using our own personal touch of brand and domain.",
     "shortUrl": "bitely.io",
-    "url": "https://bitely.azobu.app"
+    "url": "https://bitely.catamyst.com"
   },
   {
     "image": "/apps/thegalacticnews.jpg",
@@ -69,7 +69,7 @@
     "slug": "thegalacticnews",
     "description": "News or blog site inspired by Medium, Dev.to, Hashnode, BBC News, The New York Times, BuzzFeed, Forbes, ESPN, and your favorite go-to updates.",
     "shortUrl": "thegalactic.news",
-    "url": "https://azobu.news",
+    "url": "https://thegalacticnews.catamyst.com",
     "priority": true
   },
   {
@@ -79,7 +79,7 @@
     "slug": "space-codex",
     "description": "Encyclopedia and wiki site inspired by Wikipedia, Dictionary, Merriam-Webster, IMDb, Rotten Tomatoes, Gamepedia, Genius.com, and catalog of terminologies.",
     "shortUrl": "spacecodex.io",
-    "url": "https://spacecodex.azobu.app"
+    "url": "https://spacecodex.catamyst.com"
   },
   {
     "image": "",
@@ -88,7 +88,7 @@
     "slug": "ideabulb",
     "description": "Save content, create collections, and connect ideas with other people. IdeaBulb is an idea curation and product community inspired by Product Hunt, Indie Hackers, StackShare, Are.na, and active idea exchange sites.",
     "shortUrl": "ideabulb.com",
-    "url": "https://ideabulb.azobu.app"
+    "url": "https://ideabulb.catamyst.com"
   },
   {
     "image": "/apps/earthling.jpg",
@@ -97,7 +97,7 @@
     "slug": "earthling",
     "description": "Social media network inspired by Facebook, Twitter, Instagram, YouTube, Pinterest, or places you can share things with family, friends, and followers.",
     "shortUrl": "earthling.com",
-    "url": "https://earthling.azobu.app",
+    "url": "https://earthling.catamyst.com",
     "priority": true
   },
   {
@@ -107,7 +107,7 @@
     "slug": "foramu",
     "description": "Question and answer forum inspired by Quora, Stack Overflow, Reddit, Spectrum, Discord, and other hubs where you can discuss interesting topics and issues.",
     "shortUrl": "foramu.com",
-    "url": "https://foramu.azobu.app"
+    "url": "https://foramu.catamyst.com"
   },
   {
     "image": "/apps/planetary.jpg",
@@ -116,7 +116,7 @@
     "slug": "Planetary",
     "description": "Career and job portal inspired by LinkedIn, Indeed, Glassdoor, and information which in case you can apply for a job.",
     "shortUrl": "planetary.jobs",
-    "url": "https://planetary.azobu.app",
+    "url": "https://planetary.catamyst.com",
     "priority": true
   },
   {
@@ -126,7 +126,7 @@
     "slug": "consultbox",
     "description": "Consultation site inspired by WebMD, Get Help, BetterHelp, and where you can ask questions to experts in their respected fields.",
     "shortUrl": "consultbox.app",
-    "url": "https://consultbox.azobu.app"
+    "url": "https://consultbox.catamyst.com"
   },
   {
     "image": "",
@@ -135,7 +135,7 @@
     "slug": "chatto",
     "description": "Chat app inspired by Telegram, WhatsApp, LINE, KakaoTalk, WeChat, Slack, Twist, Chanty, Intercom, Crisp, and other communication channels.",
     "shortUrl": "chat.to",
-    "url": "https://chatto.azobu.app"
+    "url": "https://chatto.catamyst.com"
   },
   {
     "image": "",
@@ -144,7 +144,7 @@
     "slug": "pollvey",
     "description": "Poll, voting, or survey app inspired by SurveyMonkey, Typeform, Google Form, MyVote.IO, Surveyapp.io, Net Promoter Score (NPS), and real world elections.",
     "shortUrl": "pollvey.com",
-    "url": "https://pollvey.azobu.app"
+    "url": "https://pollvey.catamyst.com"
   },
   {
     "image": "",
@@ -153,7 +153,7 @@
     "slug": "kuizu",
     "description": "Quiz app inspired Kahoot, QuizUp, Quizlet, and other game-based learning platform that used as educational technology in schools and events.",
     "shortUrl": "kuizu.com",
-    "url": "https://kuizu.azobu.app"
+    "url": "https://kuizu.catamyst.com"
   },
   {
     "image": "",
@@ -162,7 +162,7 @@
     "slug": "ganaiza",
     "description": "Bookmark or website list organizer tool inspired by OneTab, Google Bookmarks, Pocket, Pinboard, Instapaper, Raindrop.io, and other interesting site save management.",
     "shortUrl": "ganaiza.com",
-    "url": "https://ganaiza.azobu.app"
+    "url": "https://ganaiza.catamyst.com"
   },
   {
     "image": "",
@@ -171,7 +171,7 @@
     "slug": "jetpack",
     "description": "Travel and exploration site inspired by Tripadvisor, Yelp, Zomato, Expedia, Nomad List, and other internationally reached community curated places.",
     "shortUrl": "jetpack.travel",
-    "url": "https://jetpack.azobu.app"
+    "url": "https://jetpack.catamyst.com"
   },
   {
     "image": "",
@@ -180,7 +180,7 @@
     "slug": "kukpod",
     "description": "Food and drink recipe community site inspired by Cookpad, Yummly, Allrecipes.com, and other helpful information to cook delicious meals.",
     "shortUrl": "kukpod.com",
-    "url": "https://kukpod.azobu.app"
+    "url": "https://kukpod.catamyst.com"
   },
   {
     "image": "",
@@ -189,7 +189,7 @@
     "slug": "helpbell",
     "description": "Help desk forum and support ticketing inspired by Zendesk, Freshdesk, Intercom, and other platforms to help audience and customers.",
     "shortUrl": "helpbell.app",
-    "url": "https://helpbell.azobu.app"
+    "url": "https://helpbell.catamyst.com"
   },
   {
     "image": "",
@@ -198,7 +198,7 @@
     "slug": "upmeet",
     "description": "Event management and discovery inspired by Meetup.com, Eventbrite, Peatix, Hopin.to, and scheduler which you can organize to meet with like-minded people.",
     "shortUrl": "upmeet.events",
-    "url": "https://upmeet.azobu.app"
+    "url": "https://upmeet.catamyst.com"
   },
   {
     "image": "",
@@ -207,7 +207,7 @@
     "slug": "traveal",
     "description": "All-in-one travel, ticket accomodation, hotel, and tour service inspired by Airbnb, Agoda, Trip.com, Booking.com, Hotels.com, Tripadvisor, and other worldwide agents.",
     "shortUrl": "traveal.com",
-    "url": "https://traveal.azobu.app"
+    "url": "https://traveal.catamyst.com"
   },
   {
     "image": "",
@@ -216,7 +216,7 @@
     "slug": "blastshop",
     "description": "E-commerce site inspired by Amazon, Alibaba, Shopify, and where you can buy or rent things to. Whether for primary, secondary, or tertiary needs.",
     "shortUrl": "blast.shop",
-    "url": "https://blastshop.azobu.app"
+    "url": "https://blastshop.catamyst.com"
   },
   {
     "image": "",
@@ -225,7 +225,7 @@
     "slug": "superdeliver",
     "description": "Delivery app inspired by Uber, Grab, Gojek, Ninja Van, and vendors to request delivery or short distance travel. Whether for  transportation, food order, or delivery of packages.",
     "shortUrl": "superdeliver.app",
-    "url": "https://superdeliver.azobu.app"
+    "url": "https://superdeliver.catamyst.com"
   },
   {
     "image": "",
@@ -234,7 +234,7 @@
     "slug": "aiueo",
     "description": "Audio, music, and podcast streaming site inspired by Spotify, YouTube Music, Apple Music, and Google Podcasts.",
     "shortUrl": "aiueo.com",
-    "url": "https://aiueo.azobu.app",
+    "url": "https://aiueo.catamyst.com",
     "isVisible": false
   },
   {
@@ -244,27 +244,27 @@
     "slug": "cineflix",
     "description": "Video and movie streaming site inspired by YouTube, Netflix, Hulu, and real world cinema experience.",
     "shortUrl": "cineflix.com",
-    "url": "https://cineflix.azobu.app",
+    "url": "https://cineflix.catamyst.com",
     "isVisible": false
   },
   {
     "image": "",
     "icon": "⭕",
-    "title": "Woot",
-    "slug": "woot",
+    "title": "Sahoot",
+    "slug": "sahoot",
     "description": "Mini search engine site inspired by Google, Yahoo, Bing, DuckDuckGo.",
-    "shortUrl": "woot.com",
-    "url": "https://woot.azobu.app",
+    "shortUrl": "sahoot.com",
+    "url": "https://sahoot.catamyst.com",
     "isVisible": false
   },
   {
     "image": "",
     "icon": "⭕",
-    "title": "Demica",
-    "slug": "demica",
+    "title": "Cademy",
+    "slug": "cademy",
     "description": "Learning and course site inspired by Khan Academy, Udemy, Duolingo, Teachable, Educative.",
-    "shortUrl": "demica.com",
-    "url": "https://demica.azobu.app",
+    "shortUrl": "cademy.com",
+    "url": "https://cademy.catamyst.com",
     "isVisible": false
   },
   {
@@ -274,7 +274,7 @@
     "slug": "paynow",
     "description": "Payment gateway service inspired by PayPal, Transferwise.",
     "shortUrl": "paynow.app",
-    "url": "https://paynow.azobu.app",
+    "url": "https://paynow.catamyst.com",
     "isVisible": false
   }
 ]
