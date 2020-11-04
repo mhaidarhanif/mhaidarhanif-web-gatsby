@@ -1,5 +1,5 @@
 import React from "react"
-import { PageProps, Link } from "gatsby"
+import { Link } from "gatsby"
 import styled from "@xstyled/emotion"
 
 import Layout from "../components/Layout"
@@ -16,7 +16,7 @@ const Avatar = styled.div`
   align-items: center;
 `
 
-const AboutPage = (props: PageProps) => (
+const AboutPage = (props) => (
   <Layout>
     <SEO title="About" />
 
