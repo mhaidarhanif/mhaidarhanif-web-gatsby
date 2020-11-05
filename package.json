@@ -7,7 +7,7 @@
   "dependencies": {
     "@emotion/core": "10.0.28",
     "@emotion/styled": "10.0.27",
-    "@xstyled/emotion": "1.17.1",
+    "@xstyled/emotion": "1.19.1",
     "airtable-plus": "1.0.4",
     "emotion-theming": "10.0.27",
     "gatsby": "^2.21.21",
