@@ -77,7 +77,7 @@ const SectionHero = () => (
           </Paragraph>
 
           <LinkButtons>
-            <LinkButton to="/contact" variant="primary">
+            <LinkButton to="/about" variant="primary">
               Read More
             </LinkButton>
           </LinkButtons>

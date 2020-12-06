@@ -16,7 +16,7 @@ const Avatar = styled.div`
   align-items: center;
 `
 
-const AboutPage = (props) => (
+const AboutPage = props => (
   <Layout>
     <SEO title="About" />
 
@@ -37,14 +37,11 @@ const AboutPage = (props) => (
         <h2>Works</h2>
         <p>
           I am now focusing to develop an education venture that supports
-          distant learning and remote work. It is named Catamyst, a platform
-          that helps people to start and grow their career in the software
-          industry. Currently doing{" "}
-          <Anchor href="https://catamyst.com">
-            private mentorship
-          </Anchor>{" "}
-          there as well. Furthermore, I'm developing a highly-skilled
-          professionals community named{" "}
+          distant learning and remote work. It is named{" "}
+          <Anchor href="https://catamyst.com">Catamyst</Anchor>, a platform that
+          helps people to start and grow their career in the software industry.
+          You can learn or showcase your work there. Furthermore, I'm developing
+          a highly-skilled professionals community named{" "}
           <Anchor href="https://highskillmasters.com">
             High Skill Masters
           </Anchor>
